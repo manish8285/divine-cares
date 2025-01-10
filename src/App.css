@@ -1,0 +1,8 @@
+#root{
+    width:100% !important;
+}
+
+.testimonial-carousel img{
+    width: auto !important;
+    margin:auto;
+}
