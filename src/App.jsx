@@ -8,9 +8,9 @@ import './assets/css/bootstrap.min.css'
 import './assets/lib/owlcarousel/assets/owl.carousel.min.css';
 import './assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css';
 
-import moment from 'moment';
+//import moment from 'moment';
 
-import './assets/lib/easing/easing.min.js';
+//import './assets/lib/easing/easing.min.js';
 import './assets/lib/waypoints/waypoints.min.js';
 import './assets/lib/owlcarousel/owl.carousel.min.js';
 //import './assets/lib/tempusdominus/js/moment.min.js';
