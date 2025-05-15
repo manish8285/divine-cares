@@ -17,7 +17,7 @@ import './assets/lib/owlcarousel/owl.carousel.min.js';
 //import './assets/lib/tempusdominus/js/moment-timezone.min.js';
 import './assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js';
 import './assets/js/main.js'
-import { AboutPage, ContactPage, HomePage, PricingPage, ServicePage } from './components/pages'
+import { AboutPage, ContactPage, HomePage, PricingPage, ServicePage, TreatmentPage } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
 
@@ -33,6 +33,8 @@ function App() {
       <Route path='service' element={<ServicePage />} />
       <Route path='pricing' element={<PricingPage />} />
       <Route path='contact' element={<ContactPage />} />
+      <Route path='treatment' element={<TreatmentPage />} />
+
       </Route>
     </Routes>
     </BrowserRouter>

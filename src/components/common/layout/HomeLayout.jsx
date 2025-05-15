@@ -42,7 +42,10 @@ export const HomeLayout=()=>{
     <div className="container">
       <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
         <a href="/" className="navbar-brand">
-          <h1 className="m-0 text-uppercase text-primary"><i className="fa fa-clinic-medical me-2" />Divine Homoeo Care</h1>
+          <h1 className="m-0 text-uppercase text-primary">
+            {/* <i className="fa fa-clinic-medical me-2" /> */}
+            <img src="/logo.svg" width={60} alt="" />
+            Divine Homoeo Care</h1>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span className="navbar-toggler-icon" />
@@ -50,8 +53,9 @@ export const HomeLayout=()=>{
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
             <NavLink to="/" className="nav-item nav-link">Home</NavLink>
-            <NavLink to="about" className="nav-item nav-link">About</NavLink>
-            <NavLink to="service" className="nav-item nav-link">Service</NavLink>
+            <NavLink to="treatment" className="nav-item nav-link">Treatments</NavLink>
+            
+            <NavLink to="service" className="nav-item nav-link">Services</NavLink>
             <NavLink to="pricing" className="nav-item nav-link">Pricing</NavLink>
             {/* <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -64,6 +68,7 @@ export const HomeLayout=()=>{
                 <a href="search.html" className="dropdown-item">Search</a>
               </div>
             </div> */}
+            <NavLink to="about" className="nav-item nav-link">About</NavLink>
             <NavLink to="contact" className="nav-item nav-link">Contact</NavLink>
           </div>
         </div>

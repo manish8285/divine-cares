@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { AboutUs, Appointment, Blogs, Pricing, Services, Teams, Testimonial } from "../common"
+import { AboutUs, Appointment, Blogs, Pricing, Services, Teams, Testimonial, Treatments } from "../common"
 
 export const HomePage=()=>{
     return (
@@ -21,15 +21,17 @@ export const HomePage=()=>{
     </div>
   </div>
   {/* Hero End */}
-<AboutUs />
+
+ <Treatments />
+
 
 <Services />
-
+<AboutUs />
 {/* <Appointment /> */}
 
-<Pricing />
+{/* <Pricing /> */}
 
-<Teams />
+{/* <Teams /> */}
 
 <Testimonial />
 

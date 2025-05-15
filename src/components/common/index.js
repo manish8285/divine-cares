@@ -6,6 +6,7 @@ import { Testimonial } from "./testimonial";
 import { Services } from "./services";
 import { Blogs } from "./blogs";
 import { Appointment } from "./appointment";
+import { Treatments } from "./treatments";
 export {
     HomeLayout,
     AboutUs,
@@ -14,5 +15,6 @@ export {
     Testimonial,
     Services,
     Blogs,
-    Appointment
+    Appointment,
+    Treatments
 }
