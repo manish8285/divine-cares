@@ -103,7 +103,10 @@ export const HomeLayout=()=>{
             <NavLink className="text-light mb-2" to="/"><i className="fa fa-angle-right me-2" />Home</NavLink>
             <NavLink className="text-light mb-2" to="about"><i className="fa fa-angle-right me-2" />About Us</NavLink>
             <NavLink className="text-light mb-2" to="service"><i className="fa fa-angle-right me-2" />Our Services</NavLink>
-            <NavLink className="text-light" to="contact"><i className="fa fa-angle-right me-2" />Contact Us</NavLink>
+            <NavLink className="text-light mb-2" to="contact"><i className="fa fa-angle-right me-2" />Contact Us</NavLink>
+            <NavLink className="text-light mb-2" to="terms-conditions"><i className="fa fa-angle-right me-2" />Terms and Conditions</NavLink>
+            <NavLink className="text-light mb-2" to="privacy-policy"><i className="fa fa-angle-right me-2" />Privacy Policy</NavLink>
+            <NavLink className="text-light" to="refund-policy"><i className="fa fa-angle-right me-2" />Refund Policy</NavLink>
           </div>
         </div>
         {/* <div className="col-lg-3 col-md-6">
@@ -122,9 +125,11 @@ export const HomeLayout=()=>{
 
           <div className="d-flex">
             {/* <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i className="fab fa-twitter" /></a>
-            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i className="fab fa-facebook-f" /></a>
-            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i className="fab fa-linkedin-in" /></a> */}
-            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.instagram.com/divine.hcare/"><i className="fab fa-instagram" /></a>
+
+             */}
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/divinehomoeocare"><i className="fab fa-facebook-f" /></a>
+            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/divine.hcare/"><i className="fab fa-instagram" /></a>
+            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/company/divine-homoeo-care/"><i className="fab fa-linkedin-in" /></a>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Sweta from './../../../assets/img/team-3.jpg';
-import Manish from './../../../assets/img/manish.jpg';
+import Sweta from './../../../assets/img/sweta.png';
+import Ameesha from './../../../assets/img/drameesha.jpeg';
 
 export const Teams = () => {
   useEffect(() => {
@@ -35,8 +35,18 @@ export const Teams = () => {
   }, []);
 
   const teamMembers = [
-    {title:"Dr. Sweta",src:Sweta,profession:"Founder",about:"Dr. Sweta is a renowned Women and Child Specialist, offering comprehensive homeopathic solutions for various chronic diseases."},
-    {title:"Manish Singh",src:Manish,profession:"CEO & CTO",about:"Dedicated to delivering affordable and reliable healthcare solutions to our community with a commitment to innovation and trust."}
+    {title:"Dr. Sweta",src:Sweta,
+      profession:"Founder",
+      subtitle:"Homeopathic Physician",
+      registration:"2254/13",
+      about:"Dr. Sweta is a homeopathic specialist with over 10 years of experience treating chronic diseases like kidney stones, skin conditions, asthma, and digestive disorders. She provides personalized care, addressing root causes for effective relief.",
+
+    },
+    {title:"Dr. Ameesha",
+      src:Ameesha,
+      subtitle:"Homeopathic Physician",
+      registration:"P009032",
+      about:"Dr. Ameesha Samele is a Women and Child Specialist & Chronic Disease Doctor, practicing homeopathy with a holistic approach, blending traditional principles with modern care and nutrition expertise."}
   ] 
 
   return (
@@ -57,15 +67,19 @@ export const Teams = () => {
                   </div>
                   <div className="col-12 col-sm-7 h-100 d-flex flex-column">
                     <div className="mt-auto p-4">
-                      <h3>{member.title}</h3>
-                      <h6 className="fw-normal fst-italic text-primary mb-4">{member.profession}</h6>
+                      
+                      <h2>{member.title}</h2>
+                      <h6 className="fw-normal fst-italic text-primary mb-4">{member.subtitle}</h6>
+                      <h4>Reg.No. {member.registration}</h4>
+                      {/* <h6 className="fw-normal fst-italic text-primary mb-4">{member.profession}</h6> */}
+                      
                       <p className="m-0">{member.about}</p>
                     </div>
-                    <div className="d-flex mt-auto border-top p-4">
+                    {/* <div className="d-flex mt-auto border-top p-4">
                       <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-twitter" /></a>
                       <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f" /></a>
                       <a className="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i className="fab fa-linkedin-in" /></a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

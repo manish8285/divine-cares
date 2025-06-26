@@ -4,6 +4,9 @@ import { PricingPage } from "./pricingPage";
 import { ServicePage } from "./ServicePage";
 import { ContactPage } from "./contactPage";
 import { TreatmentPage } from "./TreatmentPage";
+import {TermsAndConditionsPage} from "./termsAndConditionsPage";
+import { PrivacyPolicyPage } from "./privacyPolicyPage";
+import { RefundPolicyPage } from "./returnPolicyPage";
 
 export {
     HomePage,
@@ -11,5 +14,8 @@ export {
     PricingPage,
     ServicePage,
     ContactPage,
-    TreatmentPage
+    TreatmentPage,
+    TermsAndConditionsPage,
+    PrivacyPolicyPage,
+    RefundPolicyPage
 }

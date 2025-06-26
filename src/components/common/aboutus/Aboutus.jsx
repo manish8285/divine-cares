@@ -1,4 +1,4 @@
-import AboutImage from './../../../assets/img/blog-3.jpg'
+import AboutImage from './../../../assets/img/about.png'
 export const AboutUs=()=>{
 
 
@@ -17,7 +17,7 @@ export const AboutUs=()=>{
       <div className="col-lg-7">
         <div className="mb-4">
           <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-          <h1 className="display-4">Best Natural and Safe For Yourself and Your Family</h1>
+          <h1 className="display-4">Divine Homoeo Care</h1>
         </div>
         <p>We are a dedicated team committed to revolutionizing healthcare through holistic healing practices. With a foundation rooted in homeopathy, we offer innovative solutions tailored to each individual's unique needs. Our expertise spans diagnostics, treatment, and ongoing care, all aimed at providing a seamless and effective journey toward total wellness. At our core, we prioritize patient empowerment, fostering a supportive environment where individuals can reclaim control of their health and thrive. With years of experience and a passion for transformative healthcare, we stand as leaders in our field, dedicated to guiding our community toward a healthier, happier future.</p>
         <div className="row g-3 pt-3">
@@ -42,7 +42,7 @@ export const AboutUs=()=>{
           <div className="col-sm-3 col-6">
             <div className="bg-light text-center rounded-circle py-4">
               <i className="fa-3x fas fa-stethoscope text-primary mb-3" />
-              <h6 className="mb-0">Free<small className="d-block text-primary">Consultation</small></h6>
+              <h6 className="mb-0">Online Doctor<small className="d-block text-primary">Consultation</small></h6>
             </div>
           </div>
         </div>
