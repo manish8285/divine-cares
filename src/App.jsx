@@ -17,15 +17,27 @@ import './assets/lib/owlcarousel/owl.carousel.min.js';
 //import './assets/lib/tempusdominus/js/moment-timezone.min.js';
 import './assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js';
 import './assets/js/main.js'
-import { AboutPage, ContactPage, HomePage, PricingPage, ServicePage, TreatmentPage, TermsAndConditionsPage,PrivacyPolicyPage,RefundPolicyPage } from './components/pages'
+import { AboutPage,
+   ContactPage,
+    HomePage,
+     PricingPage,
+      ServicePage,
+       TreatmentPage,
+        TermsAndConditionsPage,
+        PrivacyPolicyPage,
+        RefundPolicyPage,
+        AppointmentPage } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
+import { ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 
   return (
     <>
     <BrowserRouter>
+    <ToastContainer />
     <Routes >
       <Route path='/' element={<HomeLayout />}>
       <Route index element={<HomePage/>} />
@@ -37,7 +49,7 @@ function App() {
       <Route path='terms-conditions' element={<TermsAndConditionsPage/>} />
       <Route path='privacy-policy' element={<PrivacyPolicyPage/>} />
       <Route path='refund-policy' element={<RefundPolicyPage/>} />
-
+      <Route path='appointment' element={<AppointmentPage/>} />
 
       </Route>
     </Routes>

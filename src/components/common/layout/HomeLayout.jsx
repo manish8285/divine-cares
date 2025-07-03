@@ -57,6 +57,7 @@ export const HomeLayout=()=>{
             
             <NavLink to="service" className="nav-item nav-link">Services</NavLink>
             <NavLink to="pricing" className="nav-item nav-link">Pricing</NavLink>
+            <NavLink to="appointment" className="nav-item nav-link">Appointment</NavLink>
             {/* <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
               <div className="dropdown-menu m-0">

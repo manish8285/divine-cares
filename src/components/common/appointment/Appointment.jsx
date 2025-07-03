@@ -1,67 +1,195 @@
-export const Appointment=()=>{
-    return (
-        <>
-          {/* Appointment Start */}
-  <div className="container-fluid bg-primary my-5 py-5">
-    <div className="container py-5">
-      <div className="row gx-5">
-        <div className="col-lg-6 mb-5 mb-lg-0">
-          <div className="mb-4">
-            <h5 className="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
-            <h1 className="display-4">Make An Appointment For Your Family</h1>
-          </div>
-          <p className="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-          <a className="btn btn-dark rounded-pill py-3 px-5 me-3" href>Find Doctor</a>
-          <a className="btn btn-outline-dark rounded-pill py-3 px-5" href>Read More</a>
-        </div>
-        <div className="col-lg-6">
-          <div className="bg-white text-center rounded p-5">
-            <h1 className="mb-4">Book An Appointment</h1>
-            <form>
-              <div className="row g-3">
-                <div className="col-12 col-sm-6">
-                  <select className="form-select bg-light border-0" style={{height: 55}}>
-                    <option selected>Choose Department</option>
-                    <option value={1}>Department 1</option>
-                    <option value={2}>Department 2</option>
-                    <option value={3}>Department 3</option>
-                  </select>
-                </div>
-                <div className="col-12 col-sm-6">
-                  <select className="form-select bg-light border-0" style={{height: 55}}>
-                    <option selected>Select Doctor</option>
-                    <option value={1}>Doctor 1</option>
-                    <option value={2}>Doctor 2</option>
-                    <option value={3}>Doctor 3</option>
-                  </select>
-                </div>
-                <div className="col-12 col-sm-6">
-                  <input type="text" className="form-control bg-light border-0" placeholder="Your Name" style={{height: 55}} />
-                </div>
-                <div className="col-12 col-sm-6">
-                  <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{height: 55}} />
-                </div>
-                <div className="col-12 col-sm-6">
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { makeAppointmentApi } from "../../../api";
+import { toast } from "react-toastify";
+
+export const Appointment = () => {
+
+  const [processing,setProcessing] = useState(false) 
+  const [message,setMessage] = useState()
+  const [appointmenetdata,setAppointmentdata] = useState({
+
+  })
+
+  const submitHandler=async()=>{
+    console.log(appointmenetdata)
+    try{
+    setProcessing(true)
+    setMessage("")
+    const response = await makeAppointmentApi(appointmenetdata)
+    console.log(response)
+    toast.success(response.message)
+    }catch(error){
+      console.log(error.response)
+      toast.error(error.response.data.message)
+    }
+    setProcessing(false)
+  }
+
+  return (
+    <>
+      {/* Appointment Start */}
+      <div
+        id="makeAppointment"
+        className="container-fluid bg-primary my-5 py-5"
+      >
+        <div className="container py-5">
+          <div className="row gx-5">
+            <div className="col-lg-6 mb-5 mb-lg-0">
+              <div className="mb-4">
+                <h5 className="d-inline-block text-white text-uppercase border-bottom border-5">
+                  Appointment
+                </h5>
+                <h1 className="display-4">
+                  Make An Appointment For Your Family
+                </h1>
+              </div>
+              <p className="text-white mb-5">
+                Take the first step toward better health for you and your
+                family. Our expert homoeopathic doctors are here to help you
+                with personalized, natural treatments — no side effects, no
+                hassle.
+                <br></br>
+                ✅ Trusted by hundreds of families
+                <br />
+                ✅ Safe for all ages
+                <br />
+                ✅ Online & in-clinic appointments available
+                <br />
+                Don’t wait — book your appointment now and start your healing
+                journey!.
+              </p>
+              <NavLink
+                className="btn btn-dark rounded-pill py-3 px-5 me-3"
+                to="/treatment"
+              >
+                Find Treatments
+              </NavLink>
+              <NavLink
+                className="btn btn-outline-dark rounded-pill py-3 px-5"
+                to="/service"
+              >
+                Find Services
+              </NavLink>
+            </div>
+            <div className="col-lg-6">
+              <div className="bg-white text-center rounded p-5">
+                <h1 className="mb-4">Book An Appointment</h1>
+                <form>
+                  <div className="row g-3">
+                    <div className="col-12 col-sm-6">
+                      <select
+                        className="form-select bg-light border-0"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.mode}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"mode":event.target.value})}
+                      >
+                        <option disabled selected>
+                          Choose Mode
+                        </option>
+                        <option value={"online"}>
+                          Online (Whatsapp/ Call)
+                        </option>
+                        <option value={"offline"}>
+                          Offline (At Clinic, Gurgaon)
+                        </option>
+                      </select>
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <select
+                        className="form-select bg-light border-0"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.sex}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"sex":event.target.value})}
+                      
+                      >
+                        <option selected>Sex</option>
+                        <option value={"male"}>Male</option>
+                        <option value={"female"}>Female</option>
+                      </select>
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Your Name"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.name}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"name":event.target.value})}
+                      
+                      />
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Your Age"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.age}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"age":event.target.value})}
+                      
+                      />
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <input
+                        type="email"
+                        className="form-control bg-light border-0"
+                        placeholder="Your Email"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.email}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"email":event.target.value})}
+                      
+                      />
+                    </div>
+                    {/* <div className="col-12 col-sm-6">
                   <div className="date" id="date" data-target-input="nearest">
                     <input type="text" className="form-control bg-light border-0 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" style={{height: 55}} />
                   </div>
-                </div>
-                <div className="col-12 col-sm-6">
+                </div> */}
+                    {/* <div className="col-12 col-sm-6">
                   <div className="time" id="time" data-target-input="nearest">
                     <input type="text" className="form-control bg-light border-0 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" style={{height: 55}} />
                   </div>
-                </div>
-                <div className="col-12">
-                  <button className="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
-                </div>
+                </div> */}
+                    <div className="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Mobile Number"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.phoneNumber}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"phoneNumber":event.target.value})}
+                      
+                      />
+                    </div>
+                    <div className="col-12">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Describe something about your problems"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.problems}
+                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"problems":event.target.value})}
+                      
+                      />
+                    </div>
+                    <div className="col-12">
+                      <button
+                        disabled={processing}
+                        className="btn btn-primary w-100 py-3"
+                        onClick={()=>submitHandler()}
+                      >
+                        {processing?"processing...":"Make Appointment"}
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  {/* Appointment End */}
-        </>
-    )
-}
+      {/* Appointment End */}
+    </>
+  );
+};

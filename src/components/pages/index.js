@@ -7,6 +7,7 @@ import { TreatmentPage } from "./TreatmentPage";
 import {TermsAndConditionsPage} from "./termsAndConditionsPage";
 import { PrivacyPolicyPage } from "./privacyPolicyPage";
 import { RefundPolicyPage } from "./returnPolicyPage";
+import { AppointmentPage } from "./appointmentPage";
 
 export {
     HomePage,
@@ -17,5 +18,6 @@ export {
     TreatmentPage,
     TermsAndConditionsPage,
     PrivacyPolicyPage,
-    RefundPolicyPage
+    RefundPolicyPage,
+    AppointmentPage
 }

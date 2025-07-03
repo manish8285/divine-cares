@@ -14,7 +14,7 @@ export const HomePage=()=>{
           <h1 className="display-1 text-white mb-md-4">Cure with Homoeopathic</h1>
           <div className="pt-2">
             <NavLink to="service" className="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Find Services</NavLink>
-            <NavLink to="https://u.payu.in/GIoMCc6WPOxQhttps://dashboard-staging.payu.in/web/B47B29D48EE99650C3B6BEB6D8150947" className="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2"  >Book Appointment</NavLink>
+            <NavLink to="appointment" className="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2"  >Book Appointment</NavLink>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ export const HomePage=()=>{
 
 <Services />
 <AboutUs />
-{/* <Appointment /> */}
+<Appointment />
 
 {/* <Pricing /> */}
 
