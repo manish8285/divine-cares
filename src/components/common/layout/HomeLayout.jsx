@@ -56,8 +56,9 @@ export const HomeLayout=()=>{
             <NavLink to="treatment" className="nav-item nav-link">Treatments</NavLink>
             
             <NavLink to="service" className="nav-item nav-link">Services</NavLink>
-            <NavLink to="pricing" className="nav-item nav-link">Pricing</NavLink>
+            {/* <NavLink to="pricing" className="nav-item nav-link">Pricing</NavLink> */}
             <NavLink to="appointment" className="nav-item nav-link">Appointment</NavLink>
+            <NavLink to="tests" className="nav-item nav-link">Tests</NavLink>
             {/* <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
               <div className="dropdown-menu m-0">
@@ -71,6 +72,7 @@ export const HomeLayout=()=>{
             </div> */}
             <NavLink to="about" className="nav-item nav-link">About</NavLink>
             <NavLink to="contact" className="nav-item nav-link">Contact</NavLink>
+            
           </div>
         </div>
       </nav>
@@ -105,6 +107,7 @@ export const HomeLayout=()=>{
             <NavLink className="text-light mb-2" to="about"><i className="fa fa-angle-right me-2" />About Us</NavLink>
             <NavLink className="text-light mb-2" to="service"><i className="fa fa-angle-right me-2" />Our Services</NavLink>
             <NavLink className="text-light mb-2" to="contact"><i className="fa fa-angle-right me-2" />Contact Us</NavLink>
+            <NavLink className="text-light mb-2" to="career"><i className="fa fa-angle-right me-2" />Career</NavLink>
             <NavLink className="text-light mb-2" to="terms-conditions"><i className="fa fa-angle-right me-2" />Terms and Conditions</NavLink>
             <NavLink className="text-light mb-2" to="privacy-policy"><i className="fa fa-angle-right me-2" />Privacy Policy</NavLink>
             <NavLink className="text-light" to="refund-policy"><i className="fa fa-angle-right me-2" />Refund Policy</NavLink>

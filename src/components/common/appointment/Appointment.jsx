@@ -35,11 +35,12 @@ export const Appointment = () => {
       >
         <div className="container py-5">
           <div className="row gx-5">
-            <div className="col-lg-6 mb-5 mb-lg-0">
+            <div className="d-none d-md-block col-lg-6 mb-5 mb-lg-0">
               <div className="mb-4">
                 <h5 className="d-inline-block text-white text-uppercase border-bottom border-5">
                   Appointment
                 </h5>
+
                 <h1 className="display-4">
                   Make An Appointment For Your Family
                 </h1>
@@ -59,8 +60,9 @@ export const Appointment = () => {
                 Don’t wait — book your appointment now and start your healing
                 journey!.
               </p>
+
               <NavLink
-                className="btn btn-dark rounded-pill py-3 px-5 me-3"
+                className="btn btn-dark rounded-pill py-3 px-5 me-3 mb-3"
                 to="/treatment"
               >
                 Find Treatments

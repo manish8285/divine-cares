@@ -26,7 +26,9 @@ import { AboutPage,
         TermsAndConditionsPage,
         PrivacyPolicyPage,
         RefundPolicyPage,
-        AppointmentPage } from './components/pages'
+        AppointmentPage, 
+        CareerPage,
+        TestsPage} from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
 import { ToastContainer } from 'react-toastify'
@@ -50,6 +52,8 @@ function App() {
       <Route path='privacy-policy' element={<PrivacyPolicyPage/>} />
       <Route path='refund-policy' element={<RefundPolicyPage/>} />
       <Route path='appointment' element={<AppointmentPage/>} />
+      <Route path='career' element={<CareerPage/>} />
+      <Route path='tests' element={<TestsPage/>} />
 
       </Route>
     </Routes>

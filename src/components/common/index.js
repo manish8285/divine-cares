@@ -7,6 +7,8 @@ import { Services } from "./services";
 import { Blogs } from "./blogs";
 import { Appointment } from "./appointment";
 import { Treatments } from "./treatments";
+import { Career } from "./career";
+import { Tests } from "./tests";
 export {
     HomeLayout,
     AboutUs,
@@ -16,5 +18,7 @@ export {
     Services,
     Blogs,
     Appointment,
-    Treatments
+    Treatments,
+    Career,
+    Tests
 }

@@ -1,4 +1,4 @@
-import { AboutUs, Teams } from "../common"
+import { AboutUs, Appointment, Teams } from "../common"
 
 export const AboutPage=()=>{
     return (
@@ -11,6 +11,8 @@ export const AboutPage=()=>{
 
 
 <Teams />
+
+<Appointment />
 
 </div>
 )

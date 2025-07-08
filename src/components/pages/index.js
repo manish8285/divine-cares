@@ -8,6 +8,8 @@ import {TermsAndConditionsPage} from "./termsAndConditionsPage";
 import { PrivacyPolicyPage } from "./privacyPolicyPage";
 import { RefundPolicyPage } from "./returnPolicyPage";
 import { AppointmentPage } from "./appointmentPage";
+import { CareerPage } from "./CareerPage";
+import { TestsPage } from "./TestsPage";
 
 export {
     HomePage,
@@ -19,5 +21,7 @@ export {
     TermsAndConditionsPage,
     PrivacyPolicyPage,
     RefundPolicyPage,
-    AppointmentPage
+    AppointmentPage,
+    CareerPage,
+    TestsPage
 }
