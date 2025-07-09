@@ -42,7 +42,7 @@ export const Appointment = () => {
                 </h5>
 
                 <h1 className="display-4">
-                  Make An Appointment For Your Family
+                  Make An Appointment For You Or Your Family
                 </h1>
               </div>
               <p className="text-white mb-5">
@@ -68,7 +68,7 @@ export const Appointment = () => {
                 Find Treatments
               </NavLink>
               <NavLink
-                className="btn btn-outline-dark rounded-pill py-3 px-5"
+                className="btn btn-outline-dark rounded-pill py-3 px-5 mb-3"
                 to="/service"
               >
                 Find Services
