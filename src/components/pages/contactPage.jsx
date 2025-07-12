@@ -1,3 +1,5 @@
+import { ContactForm } from "../common"
+
 export const ContactPage=()=>{
     return (
         <>
@@ -34,7 +36,7 @@ export const ContactPage=()=>{
           <div className="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style={{width: 100, height: 70, transform: 'rotate(-15deg)'}}>
             <i className="fa fa-2x fa-phone text-white" style={{transform: 'rotate(15deg)'}} />
           </div>
-          <h6 className="mb-0">+91 8285482825</h6>
+          <h6 className="mb-0">+91 8595 0400 55</h6>
         </div>
       </div>
       <div className="col-lg-3">
@@ -56,25 +58,7 @@ export const ContactPage=()=>{
     <div className="row justify-content-center position-relative" style={{marginTop: '-200px', zIndex: 1}}>
       <div className="col-lg-8">
         <div className="bg-white rounded p-5 m-5 mb-0">
-          <form>
-            <div className="row g-3">
-              <div className="col-12 col-sm-6">
-                <input type="text" className="form-control bg-light border-0" placeholder="Your Name" style={{height: 55}} />
-              </div>
-              <div className="col-12 col-sm-6">
-                <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{height: 55}} />
-              </div>
-              <div className="col-12">
-                <input type="text" className="form-control bg-light border-0" placeholder="Subject" style={{height: 55}} />
-              </div>
-              <div className="col-12">
-                <textarea className="form-control bg-light border-0" rows={5} placeholder="Message" defaultValue={""} />
-              </div>
-              <div className="col-12">
-                <button disabled className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </div>

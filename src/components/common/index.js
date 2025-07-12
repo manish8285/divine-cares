@@ -9,6 +9,7 @@ import { Appointment } from "./appointment";
 import { Treatments } from "./treatments";
 import { Career } from "./career";
 import { Tests } from "./tests";
+import { ContactForm } from "./contactus";
 export {
     HomeLayout,
     AboutUs,
@@ -20,5 +21,6 @@ export {
     Appointment,
     Treatments,
     Career,
-    Tests
+    Tests,
+    ContactForm
 }

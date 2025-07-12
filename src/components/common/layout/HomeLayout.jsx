@@ -90,12 +90,12 @@ export const HomeLayout=()=>{
           <h4 className="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Gurugram</h4>
           <p className="mb-2"><i className="fa fa-map-marker-alt text-primary me-3" />Mata Chowk, Dhani road, wazirabad, Sector 52, Gurgaon</p>
           <p className="mb-2"><i className="fa fa-envelope text-primary me-3" />divinecares01@gmail.com</p>
-          <p className="mb-0"><i className="fa fa-phone-alt text-primary me-3" />+91 8285482825</p>
+          <p className="mb-0"><i className="fa fa-phone-alt text-primary me-3" />+91 8595 0400 55</p>
         </div>
 
         <div className="col-lg-3 col-md-6">
           <h4 className="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Raipur</h4>
-          <p className="mb-2"><i className="fa fa-map-marker-alt text-primary me-3" />Shop no 3, Mahavir Nagar, Near Anmol super market, Shyam Nagar, Raipur</p>
+          <p className="mb-2"><i className="fa fa-map-marker-alt text-primary me-3" />Mahavir Nagar, Near Anmol super market, Shyam Nagar, Raipur</p>
           <p className="mb-2"><i className="fa fa-envelope text-primary me-3" />divinecares01@gmail.com</p>
           <p className="mb-0"><i className="fa fa-phone-alt text-primary me-3" />+91 8929248031</p>
         </div>
