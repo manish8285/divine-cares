@@ -9,7 +9,7 @@ export const HomeLayout=()=>{
       <div className="row">
         <div className="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
           <div className="d-inline-flex align-items-center">
-            <a className="text-decoration-none text-body pe-3" href><i className="bi bi-telephone me-2" />+91 8285482825</a>
+            <a className="text-decoration-none text-body pe-3" href><i className="bi bi-telephone me-2" />+91 8595040055</a>
             <span className="text-body">|</span>
             <a className="text-decoration-none text-body px-3" href><i className="bi bi-envelope me-2" />divinecares01@gmail.com</a>
           </div>
@@ -111,6 +111,7 @@ export const HomeLayout=()=>{
             <NavLink className="text-light mb-2" to="terms-conditions"><i className="fa fa-angle-right me-2" />Terms and Conditions</NavLink>
             <NavLink className="text-light mb-2" to="privacy-policy"><i className="fa fa-angle-right me-2" />Privacy Policy</NavLink>
             <NavLink className="text-light" to="refund-policy"><i className="fa fa-angle-right me-2" />Refund Policy</NavLink>
+            <NavLink className="text-light" to="gallery"><i className="fa fa-angle-right me-2" />Gallery</NavLink>
           </div>
         </div>
         {/* <div className="col-lg-3 col-md-6">

@@ -10,6 +10,8 @@ import { Treatments } from "./treatments";
 import { Career } from "./career";
 import { Tests } from "./tests";
 import { ContactForm } from "./contactus";
+import { Gallery } from "./gallery";
+
 export {
     HomeLayout,
     AboutUs,
@@ -22,5 +24,6 @@ export {
     Treatments,
     Career,
     Tests,
-    ContactForm
+    ContactForm,
+    Gallery
 }

@@ -28,6 +28,7 @@ import { AboutPage,
         RefundPolicyPage,
         AppointmentPage, 
         CareerPage,
+        GalleryPage,
         TestsPage} from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
@@ -54,6 +55,7 @@ function App() {
       <Route path='appointment' element={<AppointmentPage/>} />
       <Route path='career' element={<CareerPage/>} />
       <Route path='tests' element={<TestsPage/>} />
+      <Route path='gallery' element={<GalleryPage />} />
 
       </Route>
     </Routes>

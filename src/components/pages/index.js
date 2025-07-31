@@ -10,6 +10,7 @@ import { RefundPolicyPage } from "./returnPolicyPage";
 import { AppointmentPage } from "./appointmentPage";
 import { CareerPage } from "./CareerPage";
 import { TestsPage } from "./TestsPage";
+import { GalleryPage } from "./GalleryPage";
 
 export {
     HomePage,
@@ -23,5 +24,6 @@ export {
     RefundPolicyPage,
     AppointmentPage,
     CareerPage,
-    TestsPage
+    TestsPage,
+    GalleryPage
 }
