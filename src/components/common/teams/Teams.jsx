@@ -38,7 +38,7 @@ export const Teams = () => {
     {title:"Dr. Sweta",src:Sweta,
       profession:"Founder",
       subtitle:"Homeopathic Physician",
-      registration:"2254/13",
+      registration:"34257",
       about:"Dr. Sweta is a homeopathic specialist with over 10 years of experience treating chronic diseases like kidney stones, skin conditions, asthma, and digestive disorders. She provides personalized care, addressing root causes for effective relief.",
 
     },
