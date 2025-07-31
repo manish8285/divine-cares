@@ -14,7 +14,7 @@ export const Services=()=>{
             <div className="service-icon mb-4">
               <i className="fa fa-2x fa-user-md text-white" />
             </div>
-            <h4 className="mb-3">Free Consultation</h4>
+            <h4 className="mb-3">Lowest Consultation Fee</h4>
             <p className="m-0">Expert homoeopathic doctors for personalized guidance.</p>
             <a className="btn btn-lg btn-primary rounded-pill" href>
               <i className="bi bi-arrow-right" />
