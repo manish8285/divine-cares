@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Sweta from './../../../assets/img/sweta.png';
-import Ameesha from './../../../assets/img/drameesha.jpeg';
+import Vinita from './../../../assets/img/vinita.jpeg';
 
 export const Teams = () => {
   useEffect(() => {
@@ -42,11 +42,11 @@ export const Teams = () => {
       about:"Dr. Sweta is a homeopathic specialist with over 10 years of experience treating chronic diseases like kidney stones, skin conditions, asthma, and digestive disorders. She provides personalized care, addressing root causes for effective relief.",
 
     },
-    {title:"Dr. Ameesha",
-      src:Ameesha,
+    {title:"Dr. Vinita Mangal",
+      src:Vinita,
       subtitle:"Homeopathic Physician",
-      registration:"P009032",
-      about:"Dr. Ameesha Samele is a Women and Child Specialist & Chronic Disease Doctor, practicing homeopathy with a holistic approach, blending traditional principles with modern care and nutrition expertise."}
+      registration:"22420",
+      about:"Dr. Vinita Mangal, B.H.M.S, M.D, is a Women and Child Specialist & Chronic Disease Doctor, practicing homeopathy with a holistic approach, blending traditional principles with modern care and nutrition expertise."}
   ] 
 
   return (
