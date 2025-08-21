@@ -11,6 +11,8 @@ import { AppointmentPage } from "./appointmentPage";
 import { CareerPage } from "./CareerPage";
 import { TestsPage } from "./TestsPage";
 import { GalleryPage } from "./GalleryPage";
+import { BlogsPage } from "./blogsPage";
+import { SingleBlogPage } from "./singleBlogPage";
 
 export {
     HomePage,
@@ -25,5 +27,7 @@ export {
     AppointmentPage,
     CareerPage,
     TestsPage,
-    GalleryPage
+    GalleryPage,
+    BlogsPage,
+    SingleBlogPage
 }

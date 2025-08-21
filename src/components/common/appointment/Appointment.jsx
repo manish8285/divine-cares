@@ -2,29 +2,26 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { makeAppointmentApi } from "../../../api";
 import { toast } from "react-toastify";
-
+import QR from "../../../assets/img/QR.jpeg";
 export const Appointment = () => {
+  const [processing, setProcessing] = useState(false);
+  const [message, setMessage] = useState();
+  const [appointmenetdata, setAppointmentdata] = useState({});
 
-  const [processing,setProcessing] = useState(false) 
-  const [message,setMessage] = useState()
-  const [appointmenetdata,setAppointmentdata] = useState({
-
-  })
-
-  const submitHandler=async()=>{
-    console.log(appointmenetdata)
-    try{
-    setProcessing(true)
-    setMessage("")
-    const response = await makeAppointmentApi(appointmenetdata)
-    console.log(response)
-    toast.success(response.message)
-    }catch(error){
-      console.log(error.response)
-      toast.error(error.response.data.message)
+  const submitHandler = async () => {
+    console.log(appointmenetdata);
+    try {
+      setProcessing(true);
+      setMessage("");
+      const response = await makeAppointmentApi(appointmenetdata);
+      console.log(response);
+      toast.success(response.message);
+    } catch (error) {
+      console.log(error.response);
+      toast.error(error.response.data.message);
     }
-    setProcessing(false)
-  }
+    setProcessing(false);
+  };
 
   return (
     <>
@@ -84,7 +81,12 @@ export const Appointment = () => {
                         className="form-select bg-light border-0"
                         style={{ height: 55 }}
                         value={appointmenetdata.mode}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"mode":event.target.value})}
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            mode: event.target.value,
+                          })
+                        }
                       >
                         <option disabled selected>
                           Choose Mode
@@ -102,8 +104,12 @@ export const Appointment = () => {
                         className="form-select bg-light border-0"
                         style={{ height: 55 }}
                         value={appointmenetdata.sex}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"sex":event.target.value})}
-                      
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            sex: event.target.value,
+                          })
+                        }
                       >
                         <option selected>Sex</option>
                         <option value={"male"}>Male</option>
@@ -117,8 +123,12 @@ export const Appointment = () => {
                         placeholder="Your Name"
                         style={{ height: 55 }}
                         value={appointmenetdata.name}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"name":event.target.value})}
-                      
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            name: event.target.value,
+                          })
+                        }
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -128,8 +138,12 @@ export const Appointment = () => {
                         placeholder="Your Age"
                         style={{ height: 55 }}
                         value={appointmenetdata.age}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"age":event.target.value})}
-                      
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            age: event.target.value,
+                          })
+                        }
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -139,9 +153,51 @@ export const Appointment = () => {
                         placeholder="Your Email"
                         style={{ height: 55 }}
                         value={appointmenetdata.email}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"email":event.target.value})}
-                      
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            email: event.target.value,
+                          })
+                        }
                       />
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Mobile Number"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.phoneNumber}
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            phoneNumber: event.target.value,
+                          })
+                        }
+                      />
+                    </div>
+                    <div className="col-12">
+                      <input
+                        type="text"
+                        className="form-control bg-light border-0"
+                        placeholder="Describe something about your problems"
+                        style={{ height: 55 }}
+                        value={appointmenetdata.problems}
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            problems: event.target.value,
+                          })
+                        }
+                      />
+                    </div>
+                    <div className="col-12 col-sm-6">
+                      <img width={100} src={QR} alt="qr" />
+                    </div>
+                    <div className="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                      <p>
+                        Scan this QR code OR UPI divinehc@ybl to pay Rs 200/-
+                      </p>
                     </div>
                     {/* <div className="col-12 col-sm-6">
                   <div className="date" id="date" data-target-input="nearest">
@@ -153,35 +209,32 @@ export const Appointment = () => {
                     <input type="text" className="form-control bg-light border-0 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" style={{height: 55}} />
                   </div>
                 </div> */}
-                    <div className="col-12 col-sm-6">
-                      <input
-                        type="text"
-                        className="form-control bg-light border-0"
-                        placeholder="Mobile Number"
-                        style={{ height: 55 }}
-                        value={appointmenetdata.phoneNumber}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"phoneNumber":event.target.value})}
-                      
-                      />
-                    </div>
+
                     <div className="col-12">
                       <input
                         type="text"
                         className="form-control bg-light border-0"
-                        placeholder="Describe something about your problems"
+                        placeholder="Last 4 digits of your transaction id"
+                        required
                         style={{ height: 55 }}
-                        value={appointmenetdata.problems}
-                        onChange={(event)=>setAppointmentdata({...appointmenetdata,"problems":event.target.value})}
-                      
+                        value={appointmenetdata.transId}
+                        onChange={(event) =>
+                          setAppointmentdata({
+                            ...appointmenetdata,
+                            transId: event.target.value,
+                          })
+                        }
                       />
                     </div>
+
+
                     <div className="col-12">
                       <button
                         disabled={processing}
                         className="btn btn-primary w-100 py-3"
-                        onClick={()=>submitHandler()}
+                        onClick={() => submitHandler()}
                       >
-                        {processing?"processing...":"Make Appointment"}
+                        {processing ? "processing..." : "Make Appointment"}
                       </button>
                     </div>
                   </div>

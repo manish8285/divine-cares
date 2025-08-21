@@ -29,7 +29,10 @@ import { AboutPage,
         AppointmentPage, 
         CareerPage,
         GalleryPage,
-        TestsPage} from './components/pages'
+        TestsPage,
+        BlogsPage,
+        SingleBlogPage
+      } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
 import { ToastContainer } from 'react-toastify'
@@ -56,6 +59,8 @@ function App() {
       <Route path='career' element={<CareerPage/>} />
       <Route path='tests' element={<TestsPage/>} />
       <Route path='gallery' element={<GalleryPage />} />
+      <Route path='diseases' element={<BlogsPage />} />
+      <Route path='disease' element={<SingleBlogPage />} />
 
       </Route>
     </Routes>

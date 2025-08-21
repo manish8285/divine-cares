@@ -1,2 +1,3 @@
 import { Blogs } from "./Blogs";
-export { Blogs}
+import { SingleBlog } from "./blog";
+export { Blogs,SingleBlog}

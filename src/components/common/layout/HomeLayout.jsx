@@ -12,6 +12,8 @@ export const HomeLayout=()=>{
             <a className="text-decoration-none text-body pe-3" href><i className="bi bi-telephone me-2" />+91 8595040055</a>
             <span className="text-body">|</span>
             <a className="text-decoration-none text-body px-3" href><i className="bi bi-envelope me-2" />divinecares01@gmail.com</a>
+            <span className="text-body">|</span>
+            <NavLink className="text-decoration-none text-body px-3" to="diseases"><i class="fas fa-disease me-2"></i>Diseases</NavLink>
           </div>
         </div>
         <div className="col-md-6 text-center text-lg-end">
@@ -97,7 +99,7 @@ export const HomeLayout=()=>{
           <h4 className="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Raipur</h4>
           <p className="mb-2"><i className="fa fa-map-marker-alt text-primary me-3" />Mahavir Nagar, Near Anmol super market, Shyam Nagar, Raipur</p>
           <p className="mb-2"><i className="fa fa-envelope text-primary me-3" />divinecares01@gmail.com</p>
-          <p className="mb-0"><i className="fa fa-phone-alt text-primary me-3" />+91 8929248031</p>
+          <p className="mb-0"><i className="fa fa-phone-alt text-primary me-3" />+91 8595040055</p>
         </div>
 
         <div className="col-lg-3 col-md-6">
@@ -112,6 +114,7 @@ export const HomeLayout=()=>{
             <NavLink className="text-light mb-2" to="privacy-policy"><i className="fa fa-angle-right me-2" />Privacy Policy</NavLink>
             <NavLink className="text-light" to="refund-policy"><i className="fa fa-angle-right me-2" />Refund Policy</NavLink>
             <NavLink className="text-light" to="gallery"><i className="fa fa-angle-right me-2" />Gallery</NavLink>
+            <NavLink className="text-light" to="diseases"><i className="fa fa-angle-right me-2" />Diseases</NavLink>
           </div>
         </div>
         {/* <div className="col-lg-3 col-md-6">
