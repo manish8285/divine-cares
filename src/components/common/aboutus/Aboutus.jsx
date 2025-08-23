@@ -1,4 +1,5 @@
 import AboutImage from './../../../assets/img/about.png'
+import AboutText from './AboutText'
 export const AboutUs=()=>{
 
 
@@ -19,7 +20,15 @@ export const AboutUs=()=>{
           <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
           <h1 className="display-4">Divine Homoeo Care</h1>
         </div>
-        <p>We are a dedicated team committed to revolutionizing healthcare through holistic healing practices. With a foundation rooted in homeopathy, we offer innovative solutions tailored to each individual's unique needs. Our expertise spans diagnostics, treatment, and ongoing care, all aimed at providing a seamless and effective journey toward total wellness. At our core, we prioritize patient empowerment, fostering a supportive environment where individuals can reclaim control of their health and thrive. With years of experience and a passion for transformative healthcare, we stand as leaders in our field, dedicated to guiding our community toward a healthier, happier future.</p>
+
+        {/* about us text */}
+
+        <AboutText />
+
+        
+        
+        
+        
         <div className="row g-3 pt-3">
           <div className="col-sm-3 col-6">
             <div className="bg-light text-center rounded-circle py-4">
