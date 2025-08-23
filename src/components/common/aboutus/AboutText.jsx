@@ -35,7 +35,7 @@ export default function AboutText() {
             <li className="">
               <p className="font-semibold">Compassionate Care</p>
               <p className="text-sm text-gray-600">
-                Every patient is treated like family.
+                Every patient is treated as a family member.
               </p>
             </li>
             <li className="">
@@ -46,6 +46,7 @@ export default function AboutText() {
             </li>
             <li className="">
               <p className="font-semibold">Holistic Approach</p>
+              <p className="text-sm text-gray-600">Every patient is cared for as a whole, focusing on complete well-being beyond just symptoms.</p>
               <p className="text-sm text-gray-600">
                 Addressing root causes, not just symptoms.
               </p>
