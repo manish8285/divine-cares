@@ -5,10 +5,10 @@ import Pic3 from './../../../assets/img/testimonial-3.jpg'
 import ReactPlayer from 'react-player'
 
 const testimonials = [
-  {url:'https://youtu.be/q7VIeJAm3gU?si=FuUNZ73E_4tUzyEd'},
+  {url:'https://www.youtube.com/shorts/sDKK4GGO9_I'},
   {url:'https://youtu.be/CLi5RfEJOQ8?si=uHQ2Td_EvIgB21fT'},
   {url:'https://youtube.com/shorts/actW72ynPAo?si=OaP9yyOxxnawbC3p'},
-  {url:'https://youtube.com/shorts/Bi-SNoRByno?si=Bvd1jSyb4D1-dSBE'},
+  {url:'https://www.youtube.com/shorts/fZaCih8x1bE'},
   {url:'https://youtube.com/shorts/PHVCNaP6gQU?si=YvpmydBIq41VrTaZ'},
   {url:'https://youtu.be/q7VIeJAm3gU?si=FuUNZ73E_4tUzyEd'}
 ]

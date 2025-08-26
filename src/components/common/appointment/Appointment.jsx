@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { makeAppointmentApi } from "../../../api";
 import { toast } from "react-toastify";
 import QR from "../../../assets/img/QR.jpeg";
+import { AppointmentBanner } from "./AppointmentBanner";
 export const Appointment = () => {
   const [processing, setProcessing] = useState(false);
   const [message, setMessage] = useState();
@@ -32,45 +33,7 @@ export const Appointment = () => {
       >
         <div className="container py-5">
           <div className="row gx-5">
-            <div className="d-none d-md-block col-lg-6 mb-5 mb-lg-0">
-              <div className="mb-4">
-                <h5 className="d-inline-block text-white text-uppercase border-bottom border-5">
-                  Appointment
-                </h5>
-
-                <h1 className="display-4">
-                  Make An Appointment For You Or Your Family
-                </h1>
-              </div>
-              <p className="text-white mb-5">
-                Take the first step toward better health for you and your
-                family. Our expert homoeopathic doctors are here to help you
-                with personalized, natural treatments — no side effects, no
-                hassle.
-                <br></br>
-                ✅ Trusted by hundreds of families
-                <br />
-                ✅ Safe for all ages
-                <br />
-                ✅ Online & in-clinic appointments available
-                <br />
-                Don’t wait — book your appointment now and start your healing
-                journey!.
-              </p>
-
-              <NavLink
-                className="btn btn-dark rounded-pill py-3 px-5 me-3 mb-3"
-                to="/treatment"
-              >
-                Find Treatments
-              </NavLink>
-              <NavLink
-                className="btn btn-outline-dark rounded-pill py-3 px-5 mb-3"
-                to="/service"
-              >
-                Find Services
-              </NavLink>
-            </div>
+            <AppointmentBanner />
             <div className="col-lg-6">
               <div className="bg-white text-center rounded p-5">
                 <h1 className="mb-4">Book An Appointment</h1>
@@ -196,7 +159,7 @@ export const Appointment = () => {
                     </div>
                     <div className="col-12 col-sm-6 d-flex justify-content-center align-items-center">
                       <p>
-                        Scan this QR code OR UPI divinehc@ybl to pay Rs 200/-
+                        Scan this QR code OR UPI divinehc@ybl to pay
                       </p>
                     </div>
                     {/* <div className="col-12 col-sm-6">
@@ -234,7 +197,7 @@ export const Appointment = () => {
                         className="btn btn-primary w-100 py-3"
                         onClick={() => submitHandler()}
                       >
-                        {processing ? "processing..." : "Make Appointment"}
+                        {processing ? "processing..." : "Book Appointment Now"}
                       </button>
                     </div>
                   </div>
