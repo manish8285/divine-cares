@@ -11,6 +11,7 @@ import { Career } from "./career";
 import { Tests } from "./tests";
 import { ContactForm } from "./contactus";
 import { Gallery } from "./gallery";
+import { SEO } from "./seo";
 
 export {
     HomeLayout,
@@ -26,5 +27,6 @@ export {
     Tests,
     ContactForm,
     Gallery,
-    SingleBlog
+    SingleBlog,
+    SEO
 }

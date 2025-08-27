@@ -1,9 +1,20 @@
 import { NavLink } from "react-router-dom"
-import { AboutUs, Appointment, Blogs, Gallery, Pricing, Services, Teams, Testimonial, Treatments } from "../common"
+import { AboutUs, Appointment, Blogs, Gallery, Pricing, SEO, Services, Teams, Testimonial, Treatments } from "../common"
 
 export const HomePage=()=>{
+
+  const homeSeo = {
+    title: "Home | Divine Homoeo Care",
+    description: "Best homoeopathic treatments for kidney stones, skin diseases, and more without surgery.",
+    keywords: "kidney stone, skin diseases, depression, homoeopathy, Divine Homoeo Care",
+    url: "https://www.divinehomoeocare.com/",
+    image: "https://www.divinehcare.com/assets/about-DOplnLKc.png",
+  };
+
     return (
 <div>
+
+<SEO {...homeSeo}  />
 
   {/* Hero Start */}
   <div className="container-fluid bg-primary py-5 mb-5 hero-header">

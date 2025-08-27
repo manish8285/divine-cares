@@ -1,9 +1,20 @@
-import { ContactForm } from "../common"
+import { ContactForm, SEO } from "../common"
+
+export const seoData = {
+  title: "Contact Us | Divine Homoeo Care - Homoeopathic Clinic in Gurgaon & Raipur",
+  description:
+    "Get in touch with Divine Homoeo Care for expert homoeopathic treatments in Gurgaon and Raipur. Call +91 8595 0400 55 or email divinecares01@gmail.com to book an appointment today.",
+  keywords:
+    "Divine Homoeo Care contact, homoeopathy clinic Gurgaon, homoeopathy clinic Raipur, book appointment Divine Homoeo Care, call support homoeopathy, homoeopathy consultation Gurgaon, Raipur homoeopathic treatment",
+  author: "Divine Homoeo Care",
+  url: "https://www.divinehomoeocare.com/contact"
+
+}
 
 export const ContactPage=()=>{
     return (
         <>
-        
+        <SEO {...seoData} />
 
 {/* Contact Start */}
 <div className="container-fluid pt-5">
