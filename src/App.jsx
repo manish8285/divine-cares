@@ -59,8 +59,8 @@ function App() {
       <Route path='career' element={<CareerPage/>} />
       <Route path='tests' element={<TestsPage/>} />
       <Route path='gallery' element={<GalleryPage />} />
-      <Route path='diseases' element={<BlogsPage />} />
-      <Route path='disease' element={<SingleBlogPage />} />
+      <Route path='blogs' element={<BlogsPage />} />
+      <Route path='blog/:url' element={<SingleBlogPage />} />
 
       </Route>
     </Routes>

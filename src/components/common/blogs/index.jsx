@@ -1,3 +1,5 @@
 import { Blogs } from "./Blogs";
 import { SingleBlog } from "./blog";
-export { Blogs,SingleBlog}
+import { RecentPosts } from "./RecentPosts";
+import { TagCloud } from "./TagCloud";
+export { Blogs, SingleBlog, RecentPosts, TagCloud };

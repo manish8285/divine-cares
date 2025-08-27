@@ -13,24 +13,21 @@ export const HomeLayout=()=>{
             <span className="text-body">|</span>
             <a className="text-decoration-none text-body px-3" href><i className="bi bi-envelope me-2" />divinecares01@gmail.com</a>
             <span className="text-body">|</span>
-            <NavLink className="text-decoration-none text-body px-3" to="diseases"><i class="fas fa-disease me-2"></i>Diseases</NavLink>
+            <NavLink className="text-decoration-none text-body px-3" to="blogs"><i class="fas fa-disease me-2"></i>Blogs</NavLink>
           </div>
         </div>
         <div className="col-md-6 text-center text-lg-end">
           <div className="d-inline-flex align-items-center">
-            <a className="text-body px-2" href>
+            <a className="text-body px-2" href="https://www.facebook.com/divinehomoeocare">
               <i className="fab fa-facebook-f" />
             </a>
-            <a className="text-body px-2" href>
-              <i className="fab fa-twitter" />
-            </a>
-            <a className="text-body px-2" href>
+            <a className="text-body px-2" href="https://www.linkedin.com/company/divine-homoeo-care/">
               <i className="fab fa-linkedin-in" />
             </a>
-            <a className="text-body px-2" href>
+            <a className="text-body px-2" href="https://www.instagram.com/divine.hcare/">
               <i className="fab fa-instagram" />
             </a>
-            <a className="text-body ps-2" href>
+            <a className="text-body ps-2" href="https://www.youtube.com/@DivineHomoeoCare">
               <i className="fab fa-youtube" />
             </a>
           </div>
@@ -114,7 +111,7 @@ export const HomeLayout=()=>{
             <NavLink className="text-light mb-2" to="privacy-policy"><i className="fa fa-angle-right me-2" />Privacy Policy</NavLink>
             <NavLink className="text-light" to="refund-policy"><i className="fa fa-angle-right me-2" />Refund Policy</NavLink>
             <NavLink className="text-light" to="gallery"><i className="fa fa-angle-right me-2" />Gallery</NavLink>
-            <NavLink className="text-light" to="diseases"><i className="fa fa-angle-right me-2" />Diseases</NavLink>
+            <NavLink className="text-light" to="blogs"><i className="fa fa-angle-right me-2" />Blogs</NavLink>
           </div>
         </div>
         {/* <div className="col-lg-3 col-md-6">
@@ -138,6 +135,7 @@ export const HomeLayout=()=>{
                         <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/divinehomoeocare"><i className="fab fa-facebook-f" /></a>
             <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/divine.hcare/"><i className="fab fa-instagram" /></a>
             <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/company/divine-homoeo-care/"><i className="fab fa-linkedin-in" /></a>
+            <a className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 text-center" href="https://www.youtube.com/@DivineHomoeoCare"><i className="fab fa-youtube" /></a>
           </div>
         </div>
       </div>
