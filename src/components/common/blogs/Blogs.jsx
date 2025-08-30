@@ -1,45 +1,10 @@
-import User from './../../../assets/img/user.jpg'
-import Blog from './../../../assets/img/blog-1.jpg'
 import { useEffect, useState } from 'react'
 import { getPostsApi } from '../../../api'
 import { NavLink } from 'react-router-dom'
-import FlowerLoader from "../../../assets/img/flowerLoader.gif"
 import Vinita from "../../../assets/img/vinita.jpeg"
 
-const bl = [
-  {
-    title:"Dolor clita vero elitr sea stet dolor justo  diam",
-    subTitle: "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
-    CoverImage: "lala",
-    author:{name:"Dr. Sweta",profile:""},
-    views:"12345",
-    comments:"123"
-  },
-  {
-    title:"Dolor clita vero elitr sea stet dolor justo  diam",
-    subTitle: "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
-    CoverImage: "lala",
-    author:{name:"Dr. Sweta",profile:""},
-    views:"12345",
-    comments:"123"
-  },
-  {
-    title:"Dolor clita vero elitr sea stet dolor justo  diam",
-    subTitle: "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
-    CoverImage: "lala",
-    author:{name:"Dr. Sweta",profile:""},
-    views:"12345",
-    comments:"123"
-  },
-  {
-    title:"Dolor clita vero elitr sea stet dolor justo  diam",
-    subTitle: "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
-    CoverImage: "lala",
-    author:{name:"Dr. Sweta",profile:""},
-    views:"12345",
-    comments:"123"
-  }
-]
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL
+
 
 export const Blogs=()=>{
   const [blogslist,setBlogslist] = useState([])
@@ -75,9 +40,9 @@ export const Blogs=()=>{
       {
             blogslist.map((blog,index)=>(
 
-              <div className="col-xl-4 col-lg-6" key={index} >
-          <div className="bg-light rounded overflow-hidden">
-            <img className="img-fluid w-100" src={FlowerLoader} alt />
+              <div className="col-xl-4 col-lg-6 d-flex" key={index} >
+          <div className="bg-light rounded overflow-hidden h-100 w-100 d-flex flex-column">
+            <img className="img-fluid w-100" src={IMAGE_URL+blog.coverPic} alt />
             <div className="p-4">
               <NavLink className="h3 d-block mb-3" to={{pathname:`/blog/${blog.postUrl}`}}>{blog.heading}</NavLink>
               <p className="m-0">{blog.subTitle}</p>

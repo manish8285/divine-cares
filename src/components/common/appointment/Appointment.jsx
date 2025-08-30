@@ -34,8 +34,8 @@ export const Appointment = () => {
         <div className="container py-5">
           <div className="row gx-5">
             <AppointmentBanner />
-            <div className="col-lg-6">
-              <div className="bg-white text-center rounded p-5">
+            <div className="col-lg-6 appointment-form d-flex">
+              <div className="bg-white text-center rounded p-5 h-100 w-100">
                 <h1 className="mb-4">Book An Appointment</h1>
                 <form>
                   <div className="row g-3">
@@ -157,10 +157,14 @@ export const Appointment = () => {
                     <div className="col-12 col-sm-6">
                       <img width={100} src={QR} alt="qr" />
                     </div>
-                    <div className="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-                      <p>
-                        Scan this QR code OR UPI divinehc@ybl to pay
-                      </p>
+                    <div className="col-12 col-sm-6 d-flex justify-content-center align-items-center text-center">
+                      <div>
+                        <p>Scan this QR code OR UPI</p>
+                        <p>
+                          <b>divinehc@ybl</b>
+                        </p>
+                        <p>to pay</p>
+                      </div>
                     </div>
                     {/* <div className="col-12 col-sm-6">
                   <div className="date" id="date" data-target-input="nearest">
@@ -189,7 +193,6 @@ export const Appointment = () => {
                         }
                       />
                     </div>
-
 
                     <div className="col-12">
                       <button

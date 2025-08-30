@@ -9,17 +9,11 @@ import Vinita from "../../../../assets/img/vinita.jpeg"
 import GateBanner from "../../../../assets/img/gate1.png"
 import { SEO } from "../../seo"
 
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL
+
 export const SingleBlog=()=>{
     let params = useParams()
-    const [blog,setBlog]=useState({
-      heading:"Diam dolor est labore duo ipsum clita sed et lorem tempor sanctus lorem kasd duo",
-      content:`<p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
-          magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
-          amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
-          sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-          aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren</p> `
-
-    })
+    const [blog,setBlog]=useState({})
     const loadBlog=async()=>{
       try{
       const res = await getPostByUrlApi(params.url)
@@ -40,7 +34,7 @@ export const SingleBlog=()=>{
   keywords : blog.keywords,
   author : "Divine Homoeo Care",
   url : `https://www.divinehomoeocare.com/blog/${params.url}`, // change to your domain
-  image : "https://www.divinehcare.com/logo.svg", // fallback image
+  image : IMAGE_URL+blog.coverPic, // fallback image
     }
 
     return (
@@ -52,7 +46,7 @@ export const SingleBlog=()=>{
     <div className="col-lg-8">
       {/* Blog Detail Start */}
       <div className="mb-5">
-        <img className="img-fluid w-100 rounded mb-5" width={50} src={FlowerLoader} alt />
+        <img className="img-fluid rounded mb-5" style={{maxWidth:"500px"}} src={IMAGE_URL+blog.coverPic} alt />
         <h1 className="mb-4">{blog.heading}</h1>
         <h4 className="text-primary">{blog.subTitle}</h4>
         <div dangerouslySetInnerHTML={{__html:blog.content}}></div>
@@ -89,8 +83,9 @@ export const SingleBlog=()=>{
     </div>
     {/* Sidebar End */}
 
-    <Appointment />
+    
   </div>
+  <Appointment />
 </div>
 {/* Blog End */}
 

@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 export const AppointmentBanner = () => {
   return (
     <div
-      className="d-md-block col-lg-6 mb-5 mb-lg-0"
+      className="d-md-block col-lg-6 mb-5 mb-lg-0 d-flex"
     >
       {/* Inner Card */}
       <div
-        className="p-5 rounded shadow-lg"
+        className="p-5 rounded shadow-lg h-100 w-100"
         style={{
           background: "white", // Contrast card
           color: "#333",

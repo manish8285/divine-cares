@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
 import { getPostsApi } from "../../../api"
 import FlowerLoader from "../../../assets/img/flowerLoader.gif"
+import { NavLink } from "react-router-dom"
+
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL
+
 export const RecentPosts=()=>{
     const [posts,setPosts] = useState([])
 
@@ -24,8 +28,8 @@ export const RecentPosts=()=>{
         {
             posts.map((blog)=>(
                 <div className="d-flex rounded overflow-hidden mb-3">
-          <img className="img-fluid" src={FlowerLoader} style={{width: 100, height: 100, objectFit: 'cover'}} alt />
-          <a href className="h5 d-flex align-items-center bg-light px-3 mb-0">{blog.heading}</a>
+          <img className="img-fluid" src={IMAGE_URL+blog.coverPic} style={{width: 100, height: 100, objectFit: 'cover'}} alt />
+          <NavLink to={{pathname:`/blog/${blog.postUrl}`}} className="h5 d-flex align-items-center bg-light px-3 mb-0">{blog.heading}</NavLink>
         </div>
             ))
         }
