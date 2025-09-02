@@ -5,7 +5,6 @@ import Vinita from "../../../assets/img/vinita.jpeg"
 
 const IMAGE_URL = import.meta.env.VITE_IMAGE_URL
 
-
 export const Blogs=()=>{
   const [blogslist,setBlogslist] = useState([])
 

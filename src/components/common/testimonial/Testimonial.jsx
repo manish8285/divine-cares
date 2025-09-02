@@ -1,16 +1,13 @@
 import { useEffect } from "react"
-import Pic1 from './../../../assets/img/testimonial-1.jpg'
-import Pic2 from './../../../assets/img/testimonial-2.jpg'
-import Pic3 from './../../../assets/img/testimonial-3.jpg'
 import ReactPlayer from 'react-player'
 
 const testimonials = [
   {url:'https://www.youtube.com/shorts/sDKK4GGO9_I'},
-  {url:'https://youtu.be/CLi5RfEJOQ8?si=uHQ2Td_EvIgB21fT'},
-  {url:'https://youtube.com/shorts/actW72ynPAo?si=OaP9yyOxxnawbC3p'},
+  {url:'https://www.youtube.com/shorts/GQFhyakB_-M'},
+  {url:'https://www.youtube.com/shorts/9i9f9YJ0qXM'},
   {url:'https://www.youtube.com/shorts/fZaCih8x1bE'},
-  {url:'https://youtube.com/shorts/PHVCNaP6gQU?si=YvpmydBIq41VrTaZ'},
-  {url:'https://youtu.be/q7VIeJAm3gU?si=FuUNZ73E_4tUzyEd'}
+  {url:'https://www.youtube.com/shorts/sDKK4GGO9_I'},
+  {url:'https://www.youtube.com/shorts/GQFhyakB_-M'},
 ]
 
 export const Testimonial=()=>{
@@ -38,8 +35,8 @@ export const Testimonial=()=>{
       <div className="row g-5">
         {
           testimonials.map((item,index)=>(
-            <div key={index} className="col-lg-4 col-md-6">
-          <ReactPlayer src={item.url} />
+            <div key={index} className="col-lg-4 col-md-6 col-sm-12">
+          <ReactPlayer src={item.url} controls={true} />
         </div>
           ))
         }
