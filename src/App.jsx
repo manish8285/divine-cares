@@ -31,7 +31,8 @@ import { AboutPage,
         GalleryPage,
         TestsPage,
         BlogsPage,
-        SingleBlogPage
+        SingleBlogPage,
+        PackagePage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
@@ -61,6 +62,7 @@ function App() {
       <Route path='gallery' element={<GalleryPage />} />
       <Route path='blogs' element={<BlogsPage />} />
       <Route path='blog/:url' element={<SingleBlogPage />} />
+      <Route path='package/:url' element={<PackagePage />} />
 
       </Route>
     </Routes>

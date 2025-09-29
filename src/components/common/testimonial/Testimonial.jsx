@@ -29,7 +29,7 @@ export const Testimonial=()=>{
     <div className="container">
       <div className="text-center mx-auto mb-5" style={{maxWidth: 500}}>
         <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
-        <h1 className="display-4">Why We Need Homomeopathic</h1>
+        <h1 className="display-4">What Our Expert Says</h1>
       </div>
 
       <div className="row g-5">

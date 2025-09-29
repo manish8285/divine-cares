@@ -1,0 +1,364 @@
+[
+    {
+      "id": "skindisease",
+      "title": "Skin Disease Treatment Packages",
+      "startingPrice": 1000,
+      "sortDescription": "At Divine Homoeo Care, we provide specialized homoeopathic treatment packages for all types of skin diseases, designed to offer safe, natural, and effective healing. Each package includes doctor consultations and our carefully prescribed specialized homoeopathic medicines.",
+      "duration": {
+        "15 days": 1000,
+        "1 month": 2000
+      },
+      "images": [
+        "divine_drops_1.png",
+        "divine_drops_2.png",
+        "skin_disease_types.png",
+        "about.png"
+      ],
+      "faq": [
+        {
+          "question": "How much time will it take to cure my skin disease?",
+          "answer": "It depends on disease to disease and person to person. On average, it usually takes a minimum of 3 to 6 months for visible and long-lasting improvement."
+        },
+        {
+          "question": "Are the medicines safe?",
+          "answer": "Yes, our medicines are 100% safe, natural, and free from side effects. They are prescribed and prepared by qualified doctors as per classical homoeopathic principles."
+        },
+        {
+          "question": "Do I need to visit the clinic physically?",
+          "answer": "No, physical visits are not required. After purchasing a package, our doctor will contact you for consultation and then medicines will be sent to your doorstep."
+        },
+        {
+          "question": "What kind of skin diseases can this package help with?",
+          "answer": "Our package is effective for a wide range of skin problems such as fungal infections, ringworm, eczema, psoriasis, acne, allergies, recurrent rashes, pigmentation disorders, and other chronic skin conditions."
+        },
+        {
+          "question": "How will I receive the medicines?",
+          "answer": "After consultation, our doctor will prepare personalized medicines for you and deliver them safely to your home."
+        },
+        {
+          "question": "Can I extend my package later?",
+          "answer": "Yes, you can extend or upgrade your package anytime. Many patients continue with monthly packages for better results and continuous care."
+        }
+      ],
+      "description": "<section class=\"skin-package\"><h5>Homoeopathy Skin Disease Treatment Packages</h5><p>Struggling with <strong>skin problems that don’t go away</strong>? Whether it’s <strong>fungal infections</strong>, <strong>ringworm</strong>, <strong>eczema</strong>, <strong>psoriasis</strong>, <strong>acne</strong>, allergy-related rashes, or other <strong>chronic skin conditions</strong> that have troubled you for years — our <strong>Specialized Homoeopathy Skin Disease Package</strong> is designed to provide gentle, effective, and long-term relief without harmful side effects.</p><h5>Why choose Divine Homoeo Care?</h5><ul><li><strong>Personalized treatment:</strong> Each case is evaluated by an experienced homoeopathic doctor.</li><li><strong>Root-cause approach:</strong> We focus on treating the underlying cause, not just symptoms.</li><li><strong>Safe & natural:</strong> Medicine prepared using classical homoeopathic principles.</li><li><strong>Doorstep delivery:</strong> Medicines prepared for you and sent to your address.</li></ul><h5>How it works</h5><ol><li>After buying a package, <strong>our doctor will contact you personally</strong> to take a detailed case history and understand your skin condition.</li><li>Based on your symptoms and case history, the doctor will <strong>prescribe and prepare specialized homoeopathic medicines</strong> tailored for you.</li><li>Your medicines will be <strong>packaged and dispatched</strong> to your address. The doctor will be available for follow-up consultations according to the package you choose.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Doctor will contact you after purchase and medicines will be prepared & sent</li></ul></div></div><h5>Conditions we treat (examples)</h5><p>We provide care for a wide range of skin problems including <strong>all types of fungal infections</strong>, <strong>ringworm</strong>, <strong>psoriasis</strong>, <strong>eczema</strong>, chronic acne, recurrent rashes, pigmentation issues, allergy-related dermatitis, and other long-standing skin disorders.</p><p><strong>Ready to start?</strong> Purchase the package that suits you, and our doctor will reach out to begin your personalized treatment plan. Experience natural, long-term improvement with the trusted approach of homoeopathy.</p></section>"
+    },
+    {
+        "id": "kidneystone",
+        "title": "Kidney Stone Treatment Packages",
+        "startingPrice": 1000,
+        "sortDescription": "At Divine Homoeo Care, we provide specialized homoeopathic treatment packages for kidney stones. Our safe and natural approach helps dissolve stones, relieve pain, and prevent recurrence without surgery.",
+        "duration": {
+          "15 days": 1000,
+          "1 month": 2000
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "kidney-stones-Photoroom.png",
+          "about.png"
+        ],
+        "faq": [
+          {
+            "question": "Can homoeopathy really dissolve kidney stones?",
+            "answer": "Yes, homoeopathy can help dissolve small to medium-sized kidney stones naturally, relieve pain, and prevent recurrence. Larger stones may take more time or require additional treatment."
+          },
+          {
+            "question": "Will I need surgery?",
+            "answer": "In most cases, surgery can be avoided. With timely homoeopathic treatment, stones can dissolve and pass naturally without invasive procedures."
+          },
+          {
+            "question": "How long will it take to see results?",
+            "answer": "The duration depends on the size and number of stones. On average, visible relief starts within a few weeks, while complete treatment may take 3–6 months."
+          },
+          {
+            "question": "Are the medicines safe?",
+            "answer": "Yes, our medicines are safe, natural, and without side effects. They are prescribed by qualified doctors after a detailed case study."
+          },
+          {
+            "question": "Do I need to visit the clinic?",
+            "answer": "No, physical visits are not necessary. After purchase, our doctor will consult you online/telephonically and medicines will be sent to your home."
+          }
+        ],
+        "description": "<section class=\"kidney-package\"><h5>Homoeopathy Kidney Stone Treatment Packages</h5><p>Struggling with <strong>kidney stones</strong> and the pain they bring? Our <strong>Homoeopathy Kidney Stone Package</strong> is designed to dissolve stones naturally, provide pain relief, and prevent recurrence — without the need for surgery.</p><h5>Why choose Divine Homoeo Care?</h5><ul><li><strong>Stone-dissolving approach:</strong> Helps dissolve and pass kidney stones naturally.</li><li><strong>Pain relief:</strong> Reduces pain and discomfort caused by stones.</li><li><strong>Safe & natural:</strong> Medicines are side-effect free and suitable for long-term use.</li><li><strong>Prevention-focused:</strong> Helps prevent the recurrence of stones by correcting root causes.</li><li><strong>Convenient delivery:</strong> Medicines are prepared and delivered to your doorstep.</li></ul><h5>How it works</h5><ol><li>After purchasing a package, <strong>our doctor will contact you personally</strong> to take a detailed case history and understand your condition.</li><li>Based on your symptoms, stone size, and case details, the doctor will <strong>prescribe customized medicines</strong> for you.</li><li>Your medicines will be <strong>prepared and dispatched</strong> to your address. The doctor will remain available for follow-up consultations during the package period.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Follow-up and continuous monitoring during treatment</li></ul></div></div><h5>Conditions we treat</h5><p>Our treatment covers kidney stones of various types — <strong>calcium oxalate stones</strong>, <strong>uric acid stones</strong>, <strong>struvite stones</strong>, <strong>cystine stones</strong>, and recurrent stone formation issues.</p><p><strong>Ready to start?</strong> Choose the package that suits you best, and begin your safe and natural journey towards a stone-free life with Divine Homoeo Care.</p></section>"
+      },
+      {
+        "id": "piles",
+        "title": "Piles (Hemorrhoids) Treatment Packages",
+        "startingPrice": 1000,
+        "sortDescription": "At Divine Homoeo Care, we offer safe and natural homoeopathic treatment packages for Piles (Hemorrhoids). Our treatment helps relieve pain, burning, itching, bleeding, and swelling, while working to cure piles from the root without surgery.",
+        "duration": {
+          "15 days": 1000,
+          "1 month": 2000
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "piles-cactus-Photoroom.png",
+          "about.png"
+        ],
+        "faq": [
+          {
+            "question": "Can homoeopathy cure piles permanently?",
+            "answer": "Yes, homoeopathy can provide long-term and permanent relief by treating the root cause of piles such as chronic constipation, digestive issues, and venous weakness."
+          },
+          {
+            "question": "Will I need surgery?",
+            "answer": "In most cases, surgery is not required. Homoeopathy can effectively reduce swelling, pain, bleeding, and recurrence of piles without invasive procedures."
+          },
+          {
+            "question": "How much time will it take to see results?",
+            "answer": "Relief in pain, itching, and bleeding can start within weeks, but complete treatment and prevention of recurrence usually takes 3–6 months."
+          },
+          {
+            "question": "Are the medicines safe?",
+            "answer": "Yes, our medicines are 100% safe, natural, and without side effects. They are prepared and prescribed by qualified doctors after detailed consultation."
+          },
+          {
+            "question": "Do I need to visit the clinic?",
+            "answer": "No, you don’t need to visit physically. Our doctor will contact you after purchase, conduct consultation, and medicines will be delivered to your home."
+          }
+        ],
+        "description": "<section class=\"piles-package\"><h5>Homoeopathy Piles Treatment Packages</h5><p>Suffering from <strong>Piles (Hemorrhoids)</strong>? Whether you are experiencing <strong>pain, itching, burning, swelling, or bleeding</strong>, our <strong>Homoeopathy Piles Package</strong> is designed to provide safe, natural, and long-term relief without the need for surgery.</p><h5>Why choose Divine Homoeo Care?</h5><ul><li><strong>Root-cause treatment:</strong> Targets constipation, digestive weakness, and venous health to cure piles naturally.</li><li><strong>Non-surgical approach:</strong> Avoids painful surgery with safe and effective medicines.</li><li><strong>Safe & natural:</strong> No side effects, suitable for all age groups.</li><li><strong>Personalized care:</strong> Medicines prescribed after detailed consultation with our expert doctors.</li><li><strong>Doorstep delivery:</strong> Medicines prepared and shipped to your home.</li></ul><h5>How it works</h5><ol><li>After package purchase, <strong>our doctor will contact you personally</strong> to understand your symptoms and history.</li><li>The doctor will prescribe <strong>personalized homoeopathic medicines</strong> prepared according to your case.</li><li>Your medicines will be <strong>dispatched to your address</strong>. Follow-up consultations are included as per your package.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Continuous monitoring & follow-up during treatment</li></ul></div></div><h5>Conditions we treat</h5><p>Our treatment helps in cases of <strong>internal piles</strong>, <strong>external piles</strong>, <strong>bleeding piles</strong>, <strong>painful piles</strong>, <strong>chronic constipation-related piles</strong>, and recurrence of piles after surgery.</p><p><strong>Ready to start?</strong> Purchase the package that suits you, and our doctor will reach out to begin your personalized treatment. Experience gentle, effective, and lasting relief with homoeopathy.</p></section>"
+      },
+      {
+        "id": "lipoma",
+        "title": "Lipoma Treatment Packages",
+        "startingPrice": 1000,
+        "sortDescription": "At Divine Homoeo Care, we provide specialized homoeopathic treatment for Lipoma — benign fatty lumps that may appear on arms, back, shoulders, neck, or other parts of the body. Our safe and natural treatment focuses on reducing the size of lipomas and preventing the formation of new ones without surgery.",
+        "duration": {
+          "15 days": 1000,
+          "1 month": 2000
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "lipomaLogo.png",
+          "about.png"
+        ],
+        "faq": [
+          {
+            "question": "Can homoeopathy cure lipomas permanently?",
+            "answer": "Homoeopathy works on the root cause and helps reduce the size of lipomas gradually while preventing new ones. Results may vary depending on the number and size of lipomas."
+          },
+          {
+            "question": "Do I need surgery for lipomas?",
+            "answer": "In most cases, surgery is not required. Homoeopathy provides a natural, safe, and non-invasive way to manage lipomas effectively."
+          },
+          {
+            "question": "How much time will it take to see results?",
+            "answer": "Lipomas take time to shrink. On average, visible changes may start within 3–6 months, but complete treatment may take longer depending on the case."
+          },
+          {
+            "question": "Are the medicines safe?",
+            "answer": "Yes, our medicines are 100% safe, natural, and free from side effects. They are prescribed by experienced homoeopathic doctors after consultation."
+          },
+          {
+            "question": "Do I need to visit the clinic?",
+            "answer": "No, you don’t need to visit physically. After purchasing a package, our doctor will contact you for consultation and medicines will be sent to your doorstep."
+          }
+        ],
+        "description": "<section class=\"lipoma-package\"><h5>Homoeopathy Lipoma Treatment Packages</h5><p>Worried about <strong>lipomas</strong> (fatty lumps under the skin)? Whether you have a single lump or multiple lipomas that are gradually increasing, our <strong>Homoeopathy Lipoma Package</strong> provides a natural, safe, and non-surgical approach to treatment.</p><h5>Why choose Divine Homoeo Care?</h5><ul><li><strong>Non-surgical solution:</strong> Avoids painful surgery and recurrence.</li><li><strong>Root-cause treatment:</strong> Works on metabolic imbalance and fat regulation.</li><li><strong>Safe & gentle:</strong> No side effects, suitable for long-term use.</li><li><strong>Personalized medicines:</strong> Prescribed after a detailed consultation with our doctor.</li><li><strong>Doorstep delivery:</strong> Medicines prepared and shipped to your home.</li></ul><h5>How it works</h5><ol><li>After purchase, <strong>our doctor will contact you personally</strong> to understand your case.</li><li>The doctor will prescribe <strong>specialized homoeopathic medicines</strong> tailored to your lipomas and overall health.</li><li>Your medicines will be <strong>dispatched to your address</strong>, with follow-up as per your package.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Continuous monitoring & follow-up during treatment</li></ul></div></div><h5>Conditions we treat</h5><p>Our homoeopathic package helps with <strong>single lipoma</strong>, <strong>multiple lipomas</strong>, <strong>recurrent lipomas</strong>, and cases where surgery has been advised but patients seek a natural and safe alternative.</p><p><strong>Ready to start?</strong> Choose the package that suits you, and our doctor will reach out to start your personalized treatment plan.</p></section>"
+      },
+      {
+        "id": "vitiligo",
+        "title": "Vitiligo (Leucoderma) Treatment Packages",
+        "startingPrice": 1300,
+        "sortDescription": "At Divine Homoeo Care, we offer specialized homoeopathic treatment for Vitiligo (Leucoderma). Our treatment aims to stimulate re-pigmentation, slow down the spread of white patches, and work on the root cause naturally, without side effects.",
+        "duration": {
+          "15 days": 1300,
+          "1 month": 2600
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "vitiligoLogo.png",
+          "about.png"
+        ],
+        "faq": [
+          {
+            "question": "Can vitiligo be cured with homoeopathy?",
+            "answer": "Homoeopathy can significantly help in stopping the spread of vitiligo, stimulating re-pigmentation, and improving skin health. The results depend on the extent and duration of the disease."
+          },
+          {
+            "question": "How long will it take to see improvement?",
+            "answer": "Vitiligo is a chronic condition and usually requires long-term treatment. Visible improvements may start within 3–6 months, but full treatment duration varies case to case."
+          },
+          {
+            "question": "Are the medicines safe?",
+            "answer": "Yes, our medicines are 100% natural, safe, and without side effects. They are prescribed after detailed consultation by qualified doctors."
+          },
+          {
+            "question": "Do I need to visit the clinic?",
+            "answer": "No, clinic visits are not necessary. After you purchase the package, our doctor will contact you for a detailed consultation and your medicines will be delivered to your doorstep."
+          },
+          {
+            "question": "Does diet matter in vitiligo treatment?",
+            "answer": "Yes, diet plays a supportive role. Our doctor will guide you on foods to avoid and beneficial lifestyle practices during your treatment."
+          }
+        ],
+        "description": "<section class=\"vitiligo-package\"><h5>Homoeopathy Vitiligo (Leucoderma) Treatment Packages</h5><p>Struggling with <strong>white patches (Vitiligo/Leucoderma)</strong>? This condition often affects confidence and self-esteem. At Divine Homoeo Care, our <strong>Homoeopathy Vitiligo Package</strong> is designed to naturally stimulate pigmentation, control spreading, and improve skin health without harmful side effects.</p><h5>Why choose Divine Homoeo Care?</h5><ul><li><strong>Root-cause approach:</strong> Focuses on immunity, genetics, and stress-related factors that trigger vitiligo.</li><li><strong>Natural re-pigmentation:</strong> Helps restore skin color gradually and safely.</li><li><strong>Safe & side-effect free:</strong> Suitable for children and adults alike.</li><li><strong>Personalized care:</strong> Medicines prepared as per your detailed case history.</li><li><strong>Convenient delivery:</strong> Medicines sent directly to your home after doctor consultation.</li></ul><h5>How it works</h5><ol><li>After you purchase the package, <strong>our doctor will contact you</strong> for a detailed consultation about your health and skin condition.</li><li>Based on your case, <strong>individualized homoeopathic medicines</strong> will be prescribed and prepared for you.</li><li>Your medicines will be <strong>packed and shipped</strong> to your address, with follow-up consultations included as per your package.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1300</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2600</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Ongoing monitoring and dietary guidance</li></ul></div></div><h5>Conditions we treat</h5><p>Our treatment supports patients with <strong>localized vitiligo</strong>, <strong>generalized vitiligo</strong>, <strong>segmental vitiligo</strong>, and other pigment-related skin disorders.</p><p><strong>Ready to begin?</strong> Select your package, and our doctor will reach out to start your personalized homoeopathic treatment for vitiligo.</p></section>"
+      },
+      {
+        "id": "hairfall",
+        "title": "Hairfall Treatment Package",
+        "slug": "hairfall-treatment",
+        "shortDescription": "Comprehensive treatment for hair loss, thinning, and scalp-related issues using safe and natural remedies.",
+        "description": "Our Hairfall Treatment Package is designed to address hair loss, thinning, and weak hair roots. We focus on treating the underlying causes such as stress, nutritional deficiencies, hormonal imbalance, or scalp conditions. With personalized homeopathic and natural treatment, we aim to strengthen hair roots, improve scalp health, and promote healthy hair regrowth without side effects.",
+        "images": [
+            "hairfallLogo.png",
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "about.png"
+        ],
+        "duration": {
+          "15 days": "1000",
+          "1 month": "2000"
+        },
+        "faqs": [
+          {
+            "question": "How long will it take to see results?",
+            "answer": "Most patients see reduced hair fall within 1 to 2 months. Visible regrowth generally takes 3 to 6 months depending on the condition."
+          },
+          {
+            "question": "Is this treatment safe for all age groups?",
+            "answer": "Yes, it is safe for men, women, and even young adults as it uses natural and homeopathic remedies."
+          },
+          {
+            "question": "Will my hair grow back completely?",
+            "answer": "Results vary depending on the severity of hair loss and the health of hair follicles. In most cases, significant improvement is seen with consistent treatment."
+          },
+          {
+            "question": "Can I use oil or shampoo during the treatment?",
+            "answer": "Yes, but we recommend mild, chemical-free products. Our doctors can guide you on the best options."
+          }
+        ]
+      },
+      {
+        "id": "tumor",
+        "title": "Tumor Treatment Package",
+        "shortDescription": "Specialized homeopathic treatment package for benign tumors such as lipoma, fibroma, cysts, and other non-cancerous growths.",
+        "description": "<section class=\"tumor-package\">\n  <h5>Homoeopathy Tumor Treatment Packages</h5>\n  <p>\n    Facing a benign lump or growth can be worrying. Our <strong>Tumor Treatment Package</strong> at Divine Homoeo Care\n    offers a <strong>safe, non-invasive, and individualized homoeopathic approach</strong> for benign tumors such as\n    <strong>lipomas</strong>, <strong>fibromas</strong>, <strong>sebaceous cysts</strong>, and other non-cancerous swellings. Instead of rushing into surgery,\n    our experienced doctors aim to <strong>reduce the size of the growth, relieve discomfort, and prevent recurrence</strong> by treating the root causes.\n  </p>\n\n  <h5>Why choose this package?</h5>\n  <ul>\n    <li><strong>Individualized care:</strong> Every case is evaluated thoroughly — medical history, duration, growth behavior, and any prior interventions.</li>\n    <li><strong>Non-surgical option:</strong> Safe homoeopathic medicines aimed at gradual reduction of the tumor and symptomatic relief without invasive procedures.</li>\n    <li><strong>Symptom management:</strong> Reduces pain, tenderness, pressure, and local inflammation associated with lumps.</li>\n    <li><strong>Prevention-focused:</strong> Treatment works on underlying metabolic and constitutional factors to lower the chance of new growths.</li>\n    <li><strong>Doorstep delivery & follow-up:</strong> Medicines prepared specially for you and sent to your address; follow-ups included as per package.</li>\n  </ul>\n\n  <h5>How the process works</h5>\n  <ol>\n    <li>After you purchase the package, <strong>our doctor will contact you</strong> for a detailed case history — size, mobility, rate of growth, symptoms, and any reports or scans you may have.</li>\n    <li>Where available, you may be asked to share ultrasound/X-ray/MRI or biopsy reports so the doctor can tailor the treatment precisely.</li>\n    <li>The doctor will <strong>prescribe individualized homoeopathic medicines</strong> and supportive lifestyle/diet advice to support healing.</li>\n    <li>Medicines will be <strong>prepared and dispatched</strong> to your address. The doctor will remain available for follow-up and monitoring during the treatment period.</li>\n  </ol>\n\n  <h5>Available Packages</h5>\n  <div class=\"packages\">\n    <div class=\"package\">\n      <h6>15 Days Package — <strong>₹1000</strong></h6>\n      <ul>\n        <li>1 Doctor Consultation</li>\n        <li>Personalized homoeopathic medicines for 15 days</li>\n        <li>Doctor will contact you after purchase to collect details and any reports</li>\n      </ul>\n    </div>\n\n    <div class=\"package\">\n      <h6>1 Month Package — <strong>₹2000</strong></h6>\n      <ul>\n        <li>2 Doctor Consultations</li>\n        <li>Personalized homoeopathic medicines for 1 month</li>\n        <li>Follow-up and monitoring; guidance on tests if required</li>\n      </ul>\n    </div>\n  </div>\n\n  <h5>Who can benefit?</h5>\n  <p>\n    This package is intended for patients with benign growths such as small-to-moderate lipomas, fibromas, sebaceous cysts,\n    and similar non-malignant lumps. <strong>If there is any suspicion of malignancy or alarming features</strong> (rapid growth, hard fixed mass,\n    unexplained systemic symptoms), you will be advised immediate medical evaluation and referral as needed.\n  </p>\n\n  <p>\n    <strong>Important:</strong> Homoeopathy offers a conservative alternative and often reduces size and symptoms over time, but outcomes depend on the type,\n    size, location, and duration of the tumor. Our doctors will guide you honestly about realistic expectations and the need for any investigations.\n  </p>\n\n  <p>\n    <strong>Ready to begin?</strong> Choose the package that suits you, upload any reports if available, and our doctor will contact you to start a\n    personalized, safe, and monitored treatment plan.\n  </p>\n</section>",
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "about.png"
+        ],
+        "duration": {
+          "15 days": "1000",
+          "1 month": "₹2000"
+        },
+        "faqs": [
+          {
+            "question": "Can homeopathy completely remove a tumor?",
+            "answer": "In many benign tumors, homeopathy helps in reducing the size and preventing recurrence. Results depend on the type, size, and duration of the tumor."
+          },
+          {
+            "question": "How much time does it take to see improvement?",
+            "answer": "Initial changes such as reduction in discomfort may be seen within 1 to 2 months. Significant reduction in size usually requires 3 to 6 months or more."
+          },
+          {
+            "question": "Is this treatment safe if I am already taking other medicines?",
+            "answer": "Yes, homeopathy can be safely taken alongside other treatments, but our doctor will guide you for best results."
+          },
+          {
+            "question": "Do I need surgery along with this treatment?",
+            "answer": "In most benign tumors, surgery can be avoided with consistent homeopathic treatment. However, our doctor will evaluate your condition before suggesting the best course."
+          }
+        ]
+      },
+      {
+        "id": "psoriasis",
+        "title": "Psoriasis Treatment Package",
+        "startingPrice": 1000,
+        "sortDescription": "At Divine Homoeo Care, we provide specialized homoeopathic treatment packages for Psoriasis, designed to relieve itching, scaling, redness, and prevent recurrences. Our approach is natural, safe, and aims for long-term relief by treating the root cause.",
+        "duration": {
+          "15 days": 1000,
+          "1 month": 2000
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "psoriasisLogo.png",
+          "about.png"
+        ],
+        "faq": [
+          {
+            "question": "How long does it take to see improvement in Psoriasis?",
+            "answer": "Results vary from person to person. Initial relief in itching and scaling may be noticed within a few weeks, while long-term control generally requires 3 to 6 months of continuous treatment."
+          },
+          {
+            "question": "Can homeopathy cure Psoriasis completely?",
+            "answer": "Homeopathy works by controlling flare-ups, reducing severity, and addressing the root cause. While Psoriasis is a chronic condition, many patients experience long-lasting relief and significant improvement."
+          },
+          {
+            "question": "Are there any side effects?",
+            "answer": "No, our medicines are 100% safe, natural, and free from side effects. They are prescribed after a detailed case history by qualified homeopathic doctors."
+          },
+          {
+            "question": "Do I need to visit the clinic physically?",
+            "answer": "No, you don’t need to visit physically. After you buy the package, our doctor will call you for a detailed consultation and your medicines will be delivered to your home."
+          },
+          {
+            "question": "What symptoms of Psoriasis can this package help with?",
+            "answer": "Our package provides relief from itching, redness, scaling, cracked skin, burning, joint pain in psoriatic arthritis, and reduces the frequency of flare-ups."
+          },
+          {
+            "question": "Can I extend my package later?",
+            "answer": "Yes, you can extend or upgrade your package anytime. Since Psoriasis is usually long-term, many patients continue treatment for several months for sustained improvement."
+          }
+        ],
+        "description": "<section class=\"psoriasis-package\"><h5>Homoeopathy Psoriasis Treatment Package</h5><p>Struggling with <strong>persistent skin issues like itching, redness, scaling, or cracked skin</strong>? Psoriasis can be a long-standing and recurring skin condition, but with <strong>Divine Homoeo Care’s Psoriasis Treatment Package</strong>, you can find safe, natural, and long-term relief.</p><h5>Why choose Divine Homoeo Care for Psoriasis?</h5><ul><li><strong>Personalized treatment:</strong> Each patient’s case is studied carefully, including triggers, medical history, and lifestyle.</li><li><strong>Root-cause approach:</strong> Focus on balancing the immune system and reducing recurrences instead of only suppressing symptoms.</li><li><strong>Safe & natural:</strong> Non-toxic medicines without side effects, suitable for long-term care.</li><li><strong>Convenient care:</strong> Medicines prepared for you and delivered at your doorstep.</li></ul><h5>How it works</h5><ol><li>After purchasing a package, <strong>our doctor will contact you personally</strong> for a detailed consultation about your symptoms and history.</li><li>The doctor will <strong>prescribe personalized homoeopathic medicines</strong> tailored to your condition.</li><li>Medicines will be <strong>prepared and dispatched</strong> to your home. Follow-up consultations are included as per your chosen package.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will contact you after purchase to collect details</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Doctor will contact you after purchase and medicines will be prepared & sent</li></ul></div></div><h5>Conditions we help with</h5><p>We provide care for different types of Psoriasis including <strong>plaque psoriasis</strong>, <strong>guttate psoriasis</strong>, <strong>inverse psoriasis</strong>, <strong>pustular psoriasis</strong>, <strong>scalp psoriasis</strong>, and psoriatic arthritis. Our treatment helps control flare-ups, reduce itching, and improve skin health over time.</p><p><strong>Ready to take control of your Psoriasis?</strong> Purchase a package today and let our expert doctors start your personalized treatment journey. Experience natural healing with homoeopathy.</p></section>"
+      },
+      {
+        "id": "jointpain",
+        "title": "Joint Pain Treatment Packages",
+        "startingPrice": 1000,
+        "sortDescription": "At Divine Homoeo Care, we offer specialized homoeopathic packages for joint pain, designed to provide safe, gentle, and lasting relief. Our treatments focus on the root cause of the pain, including conditions like arthritis, backache, and other musculoskeletal issues.",
+        "duration": {
+          "15 days": 1000,
+          "1 month": 2000
+        },
+        "images": [
+          "divine_drops_1.png",
+          "divine_drops_2.png",
+          "about.png",
+          "joint_pain.jpg"
+        ],
+        "faq": [
+          {
+            "question": "How long will it take to get relief from joint pain?",
+            "answer": "The time it takes to see improvement varies depending on the specific condition, its severity, and the individual. Chronic conditions like arthritis may take longer, typically a few months, for significant, long-term relief."
+          },
+          {
+            "question": "Are the homoeopathic medicines safe for long-term use?",
+            "answer": "Yes, our medicines are 100% natural, safe, and have no side effects, making them suitable for long-term treatment. They are prescribed by our qualified doctors based on classical homoeopathic principles."
+          },
+          {
+            "question": "Will I need to visit the clinic for my treatment?",
+            "answer": "No, all consultations are conducted remotely. After you purchase a package, our doctor will reach out for a detailed consultation, and your personalized medicines will be shipped to your address."
+          },
+          {
+            "question": "What kind of joint pain conditions can this package help with?",
+            "answer": "Our packages are effective for a wide range of joint and muscle issues, including various types of arthritis, rheumatism, back pain, knee pain, cervical spondylosis, and other related problems."
+          },
+          {
+            "question": "How are the medicines delivered?",
+            "answer": "After your consultation, personalized medicines are prepared and safely delivered to your doorstep. The cost of shipping is included in the package price."
+          },
+          {
+            "question": "Can I extend or upgrade my treatment package?",
+            "answer": "Yes, you can easily extend or upgrade your package at any point to continue your treatment and achieve better, more lasting results. Many patients prefer continuous care for chronic issues."
+          }
+        ],
+        "description": "<section class=\"joint-pain-package\"><h5>Homoeopathy Joint Pain Treatment Packages</h5><p>Suffering from persistent <strong>joint pain</strong>, <strong>backache</strong>, or other musculoskeletal issues? Our <strong>Specialized Homoeopathy Joint Pain Package</strong> is designed to offer a gentle, holistic, and permanent solution by addressing the underlying cause of your pain, without the side effects of conventional medicine.</p><h5>Why choose Divine Homoeo Care for Joint Pain?</h5><ul><li><strong>Personalized approach:</strong> Each patient receives a comprehensive consultation with an experienced homoeopathic doctor.</li><li><strong>Treats the root cause:</strong> We focus on healing the body from within to provide long-lasting relief, not just masking the symptoms.</li><li><strong>Safe & effective:</strong> Our medicines are natural, prepared according to classical homoeopathic principles, and are completely safe.</li><li><strong>Convenient delivery:</strong> Enjoy the convenience of having your personalized medicines delivered right to your home.</li></ul><h5>How our treatment works</h5><ol><li><strong>Consultation:</strong> Upon purchasing a package, our doctor will contact you for a detailed case history to understand your specific joint pain issues.</li><li><strong>Personalized Medicine:</strong> Based on the consultation, our doctor will prescribe and prepare a specialized set of homoeopathic medicines tailored to your condition.</li><li><strong>Doorstep Delivery:</strong> Your medicines will be securely packed and dispatched to your address. The doctor will remain in touch for follow-up consultations based on your package.</li></ol><h5>Available Packages</h5><div class=\"packages\"><div class=\"package\"><h6>15 Days Package — <strong>₹1000</strong></h6><ul><li>1 Doctor Consultation</li><li>Specialized Homoeopathic Medicines for 15 days</li><li>Doctor will call you to start the treatment process</li></ul></div><div class=\"package\"><h6>1 Month Package — <strong>₹2000</strong></h6><ul><li>2 Doctor Consultations</li><li>Specialized Homoeopathic Medicines for 1 month</li><li>Includes regular follow-ups and support</li></ul></div></div><h5>Conditions we treat (examples)</h5><p>Our treatment is effective for a wide range of conditions, including various forms of <strong>arthritis</strong> (like osteoarthritis and rheumatoid arthritis), <strong>rheumatism</strong>, <strong>cervical spondylosis</strong>, <strong>sciatica</strong>, <strong>back pain</strong>, <strong>knee pain</strong>, and general body and muscle aches.</p><p><strong>Ready to find relief?</strong> Select your package to start your journey towards a pain-free life with our personalized homoeopathic treatment.</p></section>"
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+  ]
+  

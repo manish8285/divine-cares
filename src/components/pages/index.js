@@ -13,6 +13,7 @@ import { TestsPage } from "./TestsPage";
 import { GalleryPage } from "./GalleryPage";
 import { BlogsPage } from "./blogsPage";
 import { SingleBlogPage } from "./singleBlogPage";
+import { PackagePage } from "./packagePage";
 
 export {
     HomePage,
@@ -29,5 +30,6 @@ export {
     TestsPage,
     GalleryPage,
     BlogsPage,
-    SingleBlogPage
+    SingleBlogPage,
+    PackagePage
 }

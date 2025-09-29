@@ -3,11 +3,27 @@ import { NavLink } from "react-router-dom";
 import { makeAppointmentApi } from "../../../api";
 import { toast } from "react-toastify";
 import QR from "../../../assets/img/QR.jpeg";
-import { AppointmentBanner } from "./AppointmentBanner";
-export const Appointment = () => {
+
+export const PackageForm = ({title,duration}) => {
+
   const [processing, setProcessing] = useState(false);
   const [message, setMessage] = useState();
   const [appointmenetdata, setAppointmentdata] = useState({});
+  const [totalAmount, setTotalAmount] = useState(1000);
+
+
+  duration= {
+    "d15 days":1000,
+    "1 month":2000,
+  }
+
+
+  const durationChangeHandler=(key)=>{
+      console.log(key)
+      const amount = duration[key]
+      setTotalAmount(amount)
+      setAppointmentdata({...appointmenetdata,'mode':'Package '+'Skin Disease '+key})
+  }
 
   const submitHandler = async () => {
     console.log(appointmenetdata);
@@ -16,7 +32,7 @@ export const Appointment = () => {
       setMessage("");
       const response = await makeAppointmentApi(appointmenetdata);
       console.log(response);
-      toast.success(response.message);
+      toast.success("Thank you for buying package, you will receive our call/whatsapp soon");
     } catch (error) {
       console.log(error.response);
       toast.error(error.response.data.message);
@@ -26,39 +42,29 @@ export const Appointment = () => {
 
   return (
     <>
-      {/* Appointment Start */}
-      <div
-        id="makeAppointment"
-        className="container-fluid bg-primary my-5 py-5"
-      >
-        <div className="container py-5">
-          <div className="row gx-5">
-            <AppointmentBanner />
-            <div className="col-lg-6 appointment-form d-flex">
-              <div className="bg-white text-center rounded p-5 h-100 w-100">
-                <h1 className="mb-4">Book An Appointment</h1>
+            <div className="appointment-form d-flex">
+
+              <div className="bg-white border border-primary text-center rounded p-5 h-100 w-100">
+                <h1 className="mb-0">Buy Package</h1>
+                <h2 className="text-primary mb-4">{title}</h2>
                 <form>
                   <div className="row g-3">
                     <div className="col-12 col-sm-6">
                       <select
                         className="form-select bg-light border-0"
                         style={{ height: 55 }}
-                        value={appointmenetdata.mode}
                         onChange={(event) =>
-                          setAppointmentdata({
-                            ...appointmenetdata,
-                            mode: event.target.value,
-                          })
+                          durationChangeHandler(event.target.value)
                         }
                       >
                         <option disabled selected>
-                          Choose Mode
+                          Choose Duration
                         </option>
-                        <option value={"online"}>
-                          Online (Whatsapp/ Call)
+                        <option id="15" value={"d15 days"}>
+                          15 Days (1 Consultation + 15 Day Medicine)
                         </option>
-                        <option value={"offline"}>
-                          Offline (At Clinic, Gurgaon)
+                        <option id="30" value={"1 month"}>
+                          1 Month (2 consultation + 1 month Medicine)
                         </option>
                       </select>
                     </div>
@@ -163,7 +169,7 @@ export const Appointment = () => {
                         <p>
                           <b>divinehc@ybl</b>
                         </p>
-                        <p>to pay <b>Rs 300/-</b></p>
+                        <p>to pay <b>Rs {totalAmount}/-</b></p>
                       </div>
                     </div>
                     {/* <div className="col-12 col-sm-6">
@@ -181,7 +187,7 @@ export const Appointment = () => {
                       <input
                         type="text"
                         className="form-control bg-light border-0"
-                        placeholder="Last 4 digits of your transaction id"
+                        placeholder="UTR number of payment"
                         required
                         style={{ height: 55 }}
                         value={appointmenetdata.transId}
@@ -200,17 +206,14 @@ export const Appointment = () => {
                         className="btn btn-warning w-100 py-3"
                         onClick={() => submitHandler()}
                       >
-                        {processing ? "processing..." : "Book Appointment Now"}
+                        {processing ? "processing..." : "Buy Package Now"}
                       </button>
                     </div>
                   </div>
                 </form>
               </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-      {/* Appointment End */}
     </>
   );
 };

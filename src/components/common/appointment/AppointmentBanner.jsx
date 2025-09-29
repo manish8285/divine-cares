@@ -19,14 +19,14 @@ export const AppointmentBanner = () => {
           </h5>
 
           <h1 className="display-5 fw-bold mt-3 text-primary">
-            Pay ₹1000 & Get FREE Medicines!
+            Pay Only ₹300 to book Appointmenet
           </h1>
         </div>
 
         <p className="mb-4 fs-5 text-center text-secondary">
           🌿 Take the first step toward <b>natural healing</b> today.  
-          Pay only <b>₹1000 consultation fee</b> and get  
-          <b> FREE Customized Homoeopathic medicines worth ₹1000 & more!</b>
+          Pay only <b>₹300 consultation fee</b>. Get  
+          <b> Effective Customized Homoeopathic medicines and consultation at one place</b>
         </p>
 
         {/* Why Choose Us Section */}

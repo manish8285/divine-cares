@@ -12,7 +12,8 @@ import { Tests } from "./tests";
 import { ContactForm } from "./contactus";
 import { Gallery } from "./gallery";
 import { SEO } from "./seo";
-
+import { Hero } from "./hero";
+import { PackageForm,PackageDetails } from "./package";
 export {
     HomeLayout,
     AboutUs,
@@ -28,5 +29,8 @@ export {
     ContactForm,
     Gallery,
     SingleBlog,
-    SEO
+    SEO,
+    Hero,
+    PackageForm,
+    PackageDetails
 }
