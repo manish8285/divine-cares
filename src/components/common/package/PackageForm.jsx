@@ -13,7 +13,7 @@ export const PackageForm = ({title,duration}) => {
 
 
   duration= {
-    "d15 days":1000,
+    "15 days":1000,
     "1 month":2000,
   }
 
@@ -22,7 +22,7 @@ export const PackageForm = ({title,duration}) => {
       console.log(key)
       const amount = duration[key]
       setTotalAmount(amount)
-      setAppointmentdata({...appointmenetdata,'mode':'Package '+'Skin Disease '+key})
+      setAppointmentdata({...appointmenetdata,'mode':'Package '+ ' '+title+' ' +key})
   }
 
   const submitHandler = async () => {
