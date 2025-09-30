@@ -7,7 +7,7 @@ export const seoData = {
   keywords:
     "Divine Homoeo Care contact, homoeopathy clinic Gurgaon, homoeopathy clinic Raipur, book appointment Divine Homoeo Care, call support homoeopathy, homoeopathy consultation Gurgaon, Raipur homoeopathic treatment",
   author: "Divine Homoeo Care",
-  url: "https://www.divinehomoeocare.com/contact"
+  url: "https://www.divinehcare.com/contact"
 
 }
 

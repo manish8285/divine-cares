@@ -7,7 +7,7 @@ const seoData = {
     keywords:
       "book appointment homoeopathy, online doctor consultation, divine homoeo care appointment, homeopathy treatment booking, Gurgaon homoeopathy, Raipur homoeopathy",
     author: "Divine Homoeo Care",
-    url: "https://www.divinehomoeocare.com/package"
+    url: "https://www.divinehcare.com/package"
   };
 
 export const PackagePage=()=>{

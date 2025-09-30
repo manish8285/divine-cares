@@ -7,7 +7,7 @@ const SEO = ({
   description = "Expert homoeopathic treatment with compassion and care.",
   keywords = "homoeopathy, treatment, healthcare, natural cure, Divine Homoeo Care",
   author = "Divine Homoeo Care",
-  url = "https://www.divinehomoeocare.com", // change to your domain
+  url = "https://www.divinehcare.com", // change to your domain
   image = "https://www.divinehcare.com/logo.svg", // fallback image
 }) => {
   return (

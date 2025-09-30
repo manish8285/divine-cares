@@ -8,7 +8,7 @@ export const seoData = {
         "Explore our wide range of excellent medical services including homoeopathic consultation, diagnostic tests, 24/7 call support, ambulance service, pharmacy, and blood testing facilities.",
       keywords:
         "homoeopathy services, medical consultation, diagnostic tests, ambulance service, pharmacy, blood testing, Divine Homoeo Care",
-      url: "https://www.divinehomeocare.com/service"
+      url: "https://www.divinehcare.com/service"
     },
   };
   

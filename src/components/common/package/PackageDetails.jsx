@@ -3,59 +3,55 @@ import { PriceDetails } from "./PriceDetails";
 import { OtherPackages } from "./OtherPackages";
 import { PackageForm } from "./PackageForm";
 import { ReplyForm } from "./ReplyForm";
-import PACKAGES from "./packages.json"
+import PACKAGES from "./packages.json";
 import { useParams } from "react-router-dom";
-const IMAGE_URL = import.meta.env.VITE_IMAGE_URL
-
-
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL;
 
 export const PackageDetails = () => {
-    const params = useParams()
-    const packageid = params.url
-    const [packageData,setPackageData] = useState({images:[],faq:[]})
+  const params = useParams();
+  const packageid = params.url;
+  const [packageData, setPackageData] = useState({ images: [], faq: [] });
 
-    const [isDataLoaded, setIsDataLoaded] = useState(false); // New state to track data loading
+  const [isDataLoaded, setIsDataLoaded] = useState(false); // New state to track data loading
 
-    const getPackage=()=>{
-        // Use the imported data directly instead of fetching
-        const package_data = PACKAGES.filter((item)=>item.id==packageid)
-        setPackageData(package_data[0])
-        setIsDataLoaded(true); // Data is loaded immediately
-        console.log(package_data)
+  const getPackage = () => {
+    // Use the imported data directly instead of fetching
+    const package_data = PACKAGES.filter((item) => item.id == packageid);
+    setPackageData(package_data[0]);
+    setIsDataLoaded(true); // Data is loaded immediately
+    console.log(package_data);
+  };
+
+  // First useEffect to fetch data when the component mounts
+  useEffect(() => {
+    getPackage();
+  }, []);
+
+  // Second useEffect to initialize Owl Carousel only after data is loaded
+  useEffect(() => {
+    if (isDataLoaded) {
+      // Check if the carousel element exists and destroy any previous instance
+      const carouselElement = $(".single-carousel");
+      if (carouselElement.hasClass("owl-loaded")) {
+        carouselElement.trigger("destroy.owl.carousel");
+      }
+
+      // Initialize the carousel
+      carouselElement.owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        dots: true,
+        dotsData: true,
+        loop: true,
+        items: 1,
+        nav: true,
+        navText: [
+          '<i class="bi bi-arrow-left"></i>',
+          '<i class="bi bi-arrow-right"></i>',
+        ],
+      });
     }
-    
-    
-    // First useEffect to fetch data when the component mounts
-    useEffect(() => {
-        getPackage();
-    }, []);
-
-    // Second useEffect to initialize Owl Carousel only after data is loaded
-    useEffect(() => {
-        if (isDataLoaded) {
-            // Check if the carousel element exists and destroy any previous instance
-            const carouselElement = $(".single-carousel");
-            if (carouselElement.hasClass('owl-loaded')) {
-                carouselElement.trigger('destroy.owl.carousel');
-            }
-            
-            // Initialize the carousel
-            carouselElement.owlCarousel({
-                autoplay: true,
-                smartSpeed: 1500,
-                dots: true,
-                dotsData: true,
-                loop: true,
-                items: 1,
-                nav: true,
-                navText: [
-                    '<i class="bi bi-arrow-left"></i>',
-                    '<i class="bi bi-arrow-right"></i>',
-                ],
-            });
-        }
-    }, [isDataLoaded]);
-
+  }, [isDataLoaded]);
 
   return (
     <>
@@ -71,27 +67,23 @@ export const PackageDetails = () => {
                 <div className="row g-4 single-product">
                   <div className="col-xl-6">
                     <div className="single-carousel owl-carousel">
-
-                        {
-                            packageData.images?.map((img,index)=>(
-                                <div
-                                    key={index}
-                                    className="single-item"
-                                    data-dot={`<img class='img-fluid' src=${IMAGE_URL+img} alt=''>`}
-                                >
-                                    <div className="single-inner bg-light rounded">
-                                    <img
-                                        src={IMAGE_URL+img}
-                                        className="img-fluid rounded"
-                                        alt="Image"
-                                    />
-                                    </div>
-                                </div>
-
-                            ))
-                        }
-
-
+                      {packageData.images?.map((img, index) => (
+                        <div
+                          key={index}
+                          className="single-item"
+                          data-dot={`<img class='img-fluid' src=${
+                            IMAGE_URL + img
+                          } alt=''>`}
+                        >
+                          <div className="single-inner bg-light rounded">
+                            <img
+                              src={IMAGE_URL + img}
+                              className="img-fluid rounded"
+                              alt="Image"
+                            />
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                   <div className="col-xl-6">
@@ -109,16 +101,24 @@ export const PackageDetails = () => {
                     </div>
                     <div className="mb-3">
                       {/* Facebook Share */}
-                      <a
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          window.location.href
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <button
+                        onClick={() => {
+                          if (navigator.share) {
+                            navigator.share({
+                              title: document.title,
+                              text: "Check this out!",
+                              url: window.location.href,
+                            });
+                          } else {
+                            // Fallback for browsers without navigator.share
+                            navigator.clipboard.writeText(window.location.href);
+                            alert("Link copied to clipboard!");
+                          }
+                        }}
                         className="btn btn-primary d-inline-block rounded text-white py-1 px-4 me-2"
                       >
-                        <i className="fab fa-facebook-f me-1" /> Share
-                      </a>
+                        <i className="fas fa-share-alt me-1" /> Share
+                      </button>
 
                       {/* WhatsApp Share */}
                       <a
@@ -250,7 +250,6 @@ export const PackageDetails = () => {
               >
                 <PriceDetails total={packageData.startingPrice} />
 
-
                 {/* <div className="additional-product mb-4">
                   <h4>Select Duration</h4>
                   <div className="additional-product-item">
@@ -280,7 +279,6 @@ export const PackageDetails = () => {
                     </label>
                   </div>
                 </div> */}
-
               </div>
             </div>
             <div className="row g-4">

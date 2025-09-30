@@ -10,19 +10,20 @@ export const PackageForm = ({title,duration}) => {
   const [message, setMessage] = useState();
   const [appointmenetdata, setAppointmentdata] = useState({});
   const [totalAmount, setTotalAmount] = useState(1000);
+  const [selectedDuration, setSelectedDuration] = useState("");
 
-
-  duration= {
-    "15 days":1000,
-    "1 month":2000,
-  }
+  const durationOptions = {
+    "15 days": 1000,
+    "1 month": 2000,
+  };
 
 
   const durationChangeHandler=(key)=>{
       console.log(key)
-      const amount = duration[key]
+      const amount = durationOptions[key]
       setTotalAmount(amount)
-      setAppointmentdata({...appointmenetdata,'mode':'Package '+ ' '+title+' ' +key})
+      setSelectedDuration(key)
+      setAppointmentdata({...appointmenetdata,'mode':'Package '+ ' '+title+' ' +key+' '+ amount})
   }
 
   const submitHandler = async () => {
@@ -53,17 +54,18 @@ export const PackageForm = ({title,duration}) => {
                       <select
                         className="form-select bg-light border-0"
                         style={{ height: 55 }}
+                        value={selectedDuration}
                         onChange={(event) =>
                           durationChangeHandler(event.target.value)
                         }
                       >
-                        <option disabled selected>
+                        <option disabled value="">
                           Choose Duration
                         </option>
-                        <option id="15" value={"d15 days"}>
+                        <option id="15" value="15 days">
                           15 Days (1 Consultation + 15 Day Medicine)
                         </option>
-                        <option id="30" value={"1 month"}>
+                        <option id="30" value="1 month">
                           1 Month (2 consultation + 1 month Medicine)
                         </option>
                       </select>
@@ -172,16 +174,6 @@ export const PackageForm = ({title,duration}) => {
                         <p>to pay <b>Rs {totalAmount}/-</b></p>
                       </div>
                     </div>
-                    {/* <div className="col-12 col-sm-6">
-                  <div className="date" id="date" data-target-input="nearest">
-                    <input type="text" className="form-control bg-light border-0 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" style={{height: 55}} />
-                  </div>
-                </div> */}
-                    {/* <div className="col-12 col-sm-6">
-                  <div className="time" id="time" data-target-input="nearest">
-                    <input type="text" className="form-control bg-light border-0 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" style={{height: 55}} />
-                  </div>
-                </div> */}
 
                     <div className="col-12">
                       <input

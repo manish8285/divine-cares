@@ -7,7 +7,7 @@ export const HomePage=()=>{
     title: "Home | Divine Homoeo Care",
     description: "Best homoeopathic treatments for kidney stones, skin diseases, and more without surgery.",
     keywords: "kidney stone, skin diseases, depression, homoeopathy, Divine Homoeo Care",
-    url: "https://www.divinehomoeocare.com/",
+    url: "https://www.divinehcare.com/",
     image: "https://www.divinehcare.com/assets/about-DOplnLKc.png",
   };
 
