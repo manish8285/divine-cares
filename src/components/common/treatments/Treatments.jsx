@@ -31,7 +31,7 @@ export const Treatments = () => {
         <div className="container">
           <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
             <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Our Specialized Treatments</h5>
-            <h1 className="display-4">Divine Homoeo Care Packages</h1>
+            <h1 className="display-4">DHC Care Packs</h1>
           </div>
           <div className="row g-5">
             {treatments.map((treatment, index) => (
@@ -41,7 +41,7 @@ export const Treatments = () => {
                   <h4 className="mb-0">{treatment.title}</h4>
                   
                   <div>
-                    <h5 className='text-primary'>Medicines + Doctor Fee = Rs 1000/-</h5>
+                    <h5 className='text-primary'>Medicines + Doctor Care = Rs 1000/-</h5>
                   <NavLink to={`/package/${treatment.id}`} className="btn btn-warning rounded-pill py-md-3 px-md-5 mx-2 w-full">Buy Package</NavLink>
                   </div>
                 </div>

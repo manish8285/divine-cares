@@ -32,7 +32,8 @@ import { AboutPage,
         TestsPage,
         BlogsPage,
         SingleBlogPage,
-        PackagePage
+        PackagePage,
+        ProductsPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeLayout } from './components/common/index.js'
@@ -60,6 +61,7 @@ function App() {
       <Route path='career' element={<CareerPage/>} />
       <Route path='tests' element={<TestsPage/>} />
       <Route path='gallery' element={<GalleryPage />} />
+      <Route path='products' element={<ProductsPage />} />
       <Route path='blogs' element={<BlogsPage />} />
       <Route path='blog/:url' element={<SingleBlogPage />} />
       <Route path='package/:url' element={<PackagePage />} />

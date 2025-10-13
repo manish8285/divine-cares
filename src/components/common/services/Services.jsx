@@ -6,7 +6,7 @@ export const Services=()=>{
     <div className="container">
       <div className="text-center mx-auto mb-5" style={{maxWidth: 500}}>
         <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
-        <h1 className="display-4">Excellent Medical Services</h1>
+        <h1 className="display-4">DHC Medical Services</h1>
       </div>
       <div className="row g-5">
         <div className="col-lg-4 col-md-6">

@@ -14,6 +14,7 @@ import { Gallery } from "./gallery";
 import { SEO } from "./seo";
 import { Hero } from "./hero";
 import { PackageForm,PackageDetails } from "./package";
+import { Products } from "./products";
 export {
     HomeLayout,
     AboutUs,
@@ -32,5 +33,6 @@ export {
     SEO,
     Hero,
     PackageForm,
-    PackageDetails
+    PackageDetails,
+    Products
 }

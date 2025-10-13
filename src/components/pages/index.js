@@ -14,7 +14,7 @@ import { GalleryPage } from "./GalleryPage";
 import { BlogsPage } from "./blogsPage";
 import { SingleBlogPage } from "./singleBlogPage";
 import { PackagePage } from "./packagePage";
-
+import { ProductsPage } from "./productsPage";
 export {
     HomePage,
     AboutPage,
@@ -31,5 +31,6 @@ export {
     GalleryPage,
     BlogsPage,
     SingleBlogPage,
-    PackagePage
+    PackagePage,
+    ProductsPage
 }
