@@ -1,9 +1,10 @@
-import { Products } from "../common"
+import { Products, Treatments } from "../common"
 
 export const ProductsPage=()=>{
     return (
         <>
         <Products />
+        <Treatments />
         </>
     )
 }
