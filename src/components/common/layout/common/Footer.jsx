@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 export const Footer=()=>{
     return (
         <>
-        <div className="container-fluid bg-dark text-light mt-5 py-5">
+        <div className="container-fluid bg-dark text-light py-5">
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">

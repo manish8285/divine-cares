@@ -36,7 +36,7 @@ import { AboutPage,
         ProductsPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { HomeLayout } from './components/common/index.js'
+import { AuthLayout, HomeLayout, Login, SignUp } from './components/common/index.js'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
@@ -65,6 +65,13 @@ function App() {
       <Route path='blogs' element={<BlogsPage />} />
       <Route path='blog/:url' element={<SingleBlogPage />} />
       <Route path='package/:url' element={<PackagePage />} />
+
+      <Route path='auth/' element={<AuthLayout />}>
+        <Route index element={<Login />} />
+        <Route path='login' element={<Login />} />
+        <Route path='signup' element={<SignUp />} />
+      
+      </Route>
 
       </Route>
     </Routes>

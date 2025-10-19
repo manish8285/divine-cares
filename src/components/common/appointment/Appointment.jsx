@@ -4,7 +4,9 @@ import { makeAppointmentApi } from "../../../api";
 import { toast } from "react-toastify";
 import QR from "../../../assets/img/QR.jpeg";
 import { AppointmentBanner } from "./AppointmentBanner";
+
 export const Appointment = () => {
+
   const [processing, setProcessing] = useState(false);
   const [message, setMessage] = useState();
   const [appointmenetdata, setAppointmentdata] = useState({});
@@ -29,7 +31,7 @@ export const Appointment = () => {
       {/* Appointment Start */}
       <div
         id="makeAppointment"
-        className="container-fluid bg-primary my-5 py-5"
+        className="container-fluid bg-primary py-5"
       >
         <div className="container py-5">
           <div className="row gx-5">

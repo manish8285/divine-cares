@@ -1,4 +1,4 @@
-import { HomeLayout } from "./layout";
+import { AuthLayout, HomeLayout } from "./layout";
 import { AboutUs } from "./aboutus/Aboutus";
 import { Pricing } from "./pricing";
 import { Teams } from "./teams";
@@ -15,8 +15,10 @@ import { SEO } from "./seo";
 import { Hero } from "./hero";
 import { PackageForm,PackageDetails } from "./package";
 import { Products } from "./products";
+import { Login, LogoutButton, SignUp } from "./auth";
 export {
     HomeLayout,
+    AuthLayout,
     AboutUs,
     Pricing,
     Teams,
@@ -34,5 +36,8 @@ export {
     Hero,
     PackageForm,
     PackageDetails,
-    Products
+    Products,
+    Login,
+    SignUp,
+    LogoutButton
 }
