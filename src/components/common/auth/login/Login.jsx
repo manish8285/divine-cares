@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { getMe, signinApi } from "../../../../api";
+import {  signinApi } from "../../../../api";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { loginSuccess, setToken } from "../../../../redux/slices/authSlice";
+import { loginSuccess } from "../../../../redux/slices/authSlice";
 
 
 export const Login=()=>{
@@ -16,21 +16,22 @@ export const Login=()=>{
     const redirect = searchParams.get("redirect")
     const dispatch = useDispatch()
   
-    const submitHandler = async () => {
+    const submitHandler = async (e) => {
+      e.preventDefault()
       console.log(userData);
       try {
         setProcessing(true);
         setMessage("");
         const response = await signinApi(userData);
         console.log(response);
-        dispatch(setToken(response.token));
+        dispatch(loginSuccess({token:response.token}));
         toast.success("You have loged in successfully");
         
 
-        const user = await getMe()
-        console.log("user",user)
+        // const user = await getMe()
+        // console.log("user",user)
 
-        dispatch(loginSuccess(user.data))
+        // dispatch(loginSuccess(user.data))
 
         if(redirect){
             navigate(redirect)
@@ -83,9 +84,10 @@ export const Login=()=>{
 
             <div className="col-12">
               <button
+                type="submit"
                 disabled={processing}
                 className="btn btn-warning w-100 py-3"
-                onClick={() => submitHandler()}
+                onClick={(e) => submitHandler(e)}
               >
                 {processing ? "processing..." : "Log In Now"}
               </button>

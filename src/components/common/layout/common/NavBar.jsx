@@ -1,11 +1,36 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { LogoutButton } from "../../auth";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getMe } from "../../../../api";
+import { setUser } from "../../../../redux/slices/authSlice";
 
 export const NavBar = () => {
-  const { isAuthenticated, user } = useSelector((state) => state.auth); // ✅ moved here
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
+  const [localUser, setLocalUser] = useState(user);
+  const dispatch = useDispatch()
 
+  // ✅ Update localUser whenever Redux user changes
+  useEffect(() => {
+    const fetchUser = async () => {
+      if (isAuthenticated) {
+        try {
+          const response = await getMe();
+          setLocalUser(response.data);
+          dispatch(setUser(response.data)); // ✅ correct action
+        } catch (error) {
+          console.error("Failed to fetch user:", error);
+        }
+      } else {
+        setLocalUser(user);
+      }
+    };
+  
+    fetchUser();
+  }, [isAuthenticated, user, dispatch]);
+  
+
+  // ✅ Navbar collapse logic
   useEffect(() => {
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
     const navbarCollapse = document.getElementById("navbarCollapse");
@@ -52,35 +77,25 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link">
-                  Home
-                </NavLink>
+                <NavLink to="/" className="nav-link">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/treatment" className="nav-link">
-                  Treatments
-                </NavLink>
+                <NavLink to="/treatment" className="nav-link">Treatments</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/products" className="nav-link">
-                  Products
-                </NavLink>
+                <NavLink to="/products" className="nav-link">Products</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/appointment" className="nav-link">
-                  Appointment
-                </NavLink>
+                <NavLink to="/appointment" className="nav-link">Appointment</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/tests" className="nav-link">
-                  Tests
-                </NavLink>
+                <NavLink to="/tests" className="nav-link">Tests</NavLink>
               </li>
 
               <li className="nav-item">
                 {isAuthenticated ? (
-                  <div className="nav-link">
-                    <p>Welcome {user?.fullName}</p>
+                  <div className="nav-link d-flex gap-2">
+                    <p>Welcome {localUser?.fullName}</p>
                     <LogoutButton />
                   </div>
                 ) : (
