@@ -1,3 +1,5 @@
+export { getAllMedicineApi, searchMedicineApi } from "./medicine";
+
 export { getMe } from "./user";
 
 export { signupApi } from "./auth";

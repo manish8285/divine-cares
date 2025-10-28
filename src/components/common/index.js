@@ -16,6 +16,8 @@ import { Hero } from "./hero";
 import { PackageForm,PackageDetails } from "./package";
 import { Products } from "./products";
 import { Login, LogoutButton, SignUp } from "./auth";
+import { MedicineSearch } from "./medicine";
+
 export {
     HomeLayout,
     AuthLayout,
@@ -39,5 +41,6 @@ export {
     Products,
     Login,
     SignUp,
-    LogoutButton
+    LogoutButton,
+    MedicineSearch
 }
