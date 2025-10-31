@@ -7,6 +7,50 @@
     margin:auto;
 }
 
+/* Print Area */
+
+@media print {
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  @page {
+    margin: 5mm; /* reduce page margins */
+    size: A4;
+  }
+
+  /* Print only the prescription div */
+  body * {
+    visibility: hidden;
+  }
+
+  #printArea, #printArea * {
+    visibility: visible;
+  }
+
+  #printArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Remove extra spacing Bootstrap adds for print */
+  .container, .row, .col-12 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Avoid page break inside table */
+  table {
+    page-break-inside: avoid;
+  }
+}
+
+
+
 
 /*** Single Products Start ***/
 .single-product .owl-nav .owl-prev,
@@ -255,3 +299,121 @@
 }
 
 /*** Shop Page End ***/
+
+
+/*Prescription Page*/
+
+.prescription-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.prescription-header,
+.prescription-footer {
+  text-align: center;
+}
+
+.prescription-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prescription-table th,
+.prescription-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.signature-box {
+  text-align: right;
+  margin-top: 40px;
+  position: relative;
+}
+
+.signature-img {
+  width: 160px;
+}
+
+.stamp-img {
+  width: 90px;
+  position: absolute;
+  right: 200px;
+  opacity: 0.8;
+  top: -10px;
+}
+
+.action-btn {
+  padding: 8px 12px;
+  background: #1c7b2c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 4px;
+  display: inline-block;
+}
+
+/* ✅ Mobile Styling */
+@media (max-width: 600px) {
+  .prescription-page {
+    width: 95%;
+    padding: 15px;
+    border: none;
+  }
+
+  table {
+    display: block;
+  }
+
+  .prescription-table thead {
+    display: none;
+  }
+
+  .prescription-table tr {
+    margin-bottom: 12px;
+    display: block;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+
+  .prescription-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border: none;
+  }
+
+  .prescription-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  .signature-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .signature-img {
+    width: 130px;
+  }
+
+  .stamp-img {
+    width: 70px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .action-btn {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+  }
+}

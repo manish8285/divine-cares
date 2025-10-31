@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import './index.css'
 import './assets/css/style.css'
@@ -34,7 +31,8 @@ import { AboutPage,
         SingleBlogPage,
         PackagePage,
         ProductsPage,
-        MedicinePage
+        MedicinePage,
+        PrescriptionPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthLayout, HomeLayout, Login, SignUp } from './components/common/index.js'
@@ -67,6 +65,7 @@ function App() {
       <Route path='blog/:url' element={<SingleBlogPage />} />
       <Route path='package/:url' element={<PackagePage />} />
       <Route path='medicine' element={<MedicinePage />} />
+      <Route path='prescription/:viewToken' element={<PrescriptionPage />} />
 
       <Route path='auth/' element={<AuthLayout />}>
         <Route index element={<Login />} />

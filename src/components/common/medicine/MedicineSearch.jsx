@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { searchMedicineApi } from "../../../api";
+import { createPrescriptionApi, searchMedicineApi } from "../../../api";
 import PrescriptionView from "./PrescriptionView";
+import { useNavigate } from "react-router-dom";
 
 const MedicineSearch = () => {
   const [query, setQuery] = useState("");
@@ -11,7 +12,8 @@ const MedicineSearch = () => {
   const [error, setError] = useState("");
   const [step, setStep] = useState(1);
   const [patient, setPatient] = useState({ name: "", age: "", phone: "",email:"",address:"",gender:"" });
-    const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState("");
+  let navigate = useNavigate()
 
   const handleSearch = async () => {
     if (!query.trim()) return;
@@ -20,7 +22,7 @@ const MedicineSearch = () => {
       const response = await searchMedicineApi(query);
       setMedicines(response.data || []);
     } catch (err) {
-      setError("Something went wrong");
+      setError("Something went wrong",err);
     } finally {
       setLoading(false);
     }
@@ -36,20 +38,32 @@ const MedicineSearch = () => {
     setSelectedMedicines(selectedMedicines.filter((m) => m._id !== id));
   };
 
-  const handleSubmitPrescription = () => {
+const handleSubmitPrescription = async () => {
+  try {
     const payload = {
       patient,
       notes,
-      medicines: selectedMedicines.map((m) => ({
-        id: m._id,
-        name: m.name,
-        dose: m.dose,
+      medicines: selectedMedicines.map(med => ({
+        medicine: med._id,     // ref id
+        name: med.name,        // duplicate name
+        dosage: med.dose
       }))
     };
 
-    console.log("Send to backend:", payload);
-    alert("Prescription submitted (check console)");
-  };
+    console.log("Sending to backend:", payload);
+
+    const response = await createPrescriptionApi(payload);
+
+    console.log("Prescription saved:", response.data);
+
+    navigate(`/prescription/${response.data.viewToken}`);
+
+  } catch (err) {
+    console.error("Error submitting prescription:", err);
+    setError(err);
+  }
+};
+
 
   useEffect(() => {
     if (query) handleSearch();
@@ -61,11 +75,18 @@ const MedicineSearch = () => {
       {/* ------------------ STEP 1: MEDICINE SELECTION ------------------ */}
       {step === 1 && (
         <>
-          <h3 className="mb-4 text-center">Create Prescription</h3>
+          <h3 className="mb-4 text-center">Search Medicine to Create Prescription</h3>
 
           {/* Selected Medicines */}
           {selectedMedicines.length > 0 && (
             <div className="mb-3">
+              <h5>Rx</h5>
+              <textarea
+            className="form-control mb-3"
+            placeholder="C/o or extra medicine"
+            value={patient.notes}
+            onChange={e => setNotes(e.target.value)}
+          ></textarea>
               <h5>Selected Medicines:</h5>
               <ul style={{"listStyleType":"none"}}>
                 {selectedMedicines.map((med, index) => (
@@ -95,7 +116,7 @@ const MedicineSearch = () => {
             <input
               type="text"
               className="form-control me-2"
-              placeholder="Enter disease, symptom, or medicine name..."
+              placeholder="Search by disease, symptom, complex or medicine name..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
@@ -126,6 +147,12 @@ const MedicineSearch = () => {
                     {med.symptoms?.length > 0 && (
                       <p className="text-muted small mt-1">
                         <b>Symptoms:</b> {med.symptoms.join(", ")}
+                      </p>
+                    )}
+
+                    {med.composition?.length > 0 && (
+                      <p className="text-muted small mt-1">
+                        <b>Composition:</b> {med.composition.join(", ")}
                       </p>
                     )}
                   </div>
@@ -178,26 +205,24 @@ const MedicineSearch = () => {
             onChange={e => setPatient({...patient, address: e.target.value})}
           />
 
-          <input 
-            className="form-control mb-3"
-            placeholder="Notes"
-            value={patient.notes}
-            onChange={e => setNotes(...notes, e.target.value)}
-          />
+          
 
           <button className="btn btn-secondary me-2" onClick={() => setStep(1)}>Back</button>
-          <button className="btn btn-primary mt-2" onClick={()=>setStep(3)}>
-            Submit Prescription
+          <button className="btn btn-primary mt-2" onClick={()=>handleSubmitPrescription()}>
+            Create Prescription
           </button>
         </div>
       )}
 
 
-      {
+      {/* {
         step===3 && (
+          <>
           <PrescriptionView prescription={{patient,notes,medicines:selectedMedicines}} />
+          <button className="btn btn-secondary me-2" onClick={() => setStep(2)}>Back</button>
+          </>
         )
-      }
+      } */}
     </div>
   );
 };

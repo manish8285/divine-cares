@@ -1,4 +1,3 @@
-
 const PrescriptionView = ({ prescription }) => {
   if (!prescription) return <div>No data</div>;
 
@@ -10,36 +9,48 @@ const PrescriptionView = ({ prescription }) => {
       <div style={styles.header}>
         <h2 style={{ margin: 0 }}>Divine Homoeo Care</h2>
         <p style={{ margin: 0 }}>www.divinehcare.com</p>
-        <p style={{ margin: 0 }}>Mobile: +91-8595040055 • Email: clinic@example.com</p>
+        <p style={{ margin: 0 }}>
+          Mobile: +91-8595040055 • Email: clinic@example.com
+        </p>
         <hr style={{ marginTop: "10px" }} />
       </div>
 
       {/* Patient Info */}
       <div style={styles.section}>
         <table>
-            <tr>
-                <th>Patient</th>
-                <td>{patient?.name}</td>
-            </tr>
-            <tr>
-                <th>Age</th>
-                <td>{patient?.age}</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>{patient?.phone}</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>{patient?.email}</td>
-            </tr>
-            <tr>
-                <th>Address</th>
-                <td>{patient?.address}</td>
-            </tr>
+          <tr>
+            <th>Patient</th>
+            <td>{patient?.name}</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>{patient?.age}</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>{patient?.phone}</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>{patient?.email}</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>{patient?.address}</td>
+          </tr>
         </table>
-        <p><strong>Date:</strong> { "" +new Date()}</p>
+        <p>
+          <strong>Date:</strong> {"" + new Date()}
+        </p>
       </div>
+
+      {/* Notes */}
+      {notes && (
+        <div style={styles.section}>
+          <h4>Rx:</h4>
+          <p>{notes}</p>
+        </div>
+      )}
 
       <h4 style={styles.heading}>Prescription</h4>
 
@@ -50,7 +61,6 @@ const PrescriptionView = ({ prescription }) => {
             <th>#</th>
             <th>Medicine</th>
             <th>Dosage</th>
-
           </tr>
         </thead>
         <tbody>
@@ -64,18 +74,32 @@ const PrescriptionView = ({ prescription }) => {
         </tbody>
       </table>
 
-      {/* Notes */}
-      {notes && (
-        <div style={styles.section}>
-          <strong>Doctor Notes:</strong>
-          <p>{notes}</p>
-        </div>
-      )}
-
       {/* Footer */}
       <div style={styles.footer}>
         <p>Signature & Stamp</p>
         <hr style={{ width: "150px" }} />
+      </div>
+
+      <div>
+        <a
+          href={`https://wa.me/91${patient?.phone}?text=Check%20your%20prescription:%20https://divinehcare.com/prescription/${'VIEW_TOKEN'}`}
+          target="_blank"
+        >
+          <i className="bi bi-whatsapp fa-2x"></i>
+        </a>
+
+         {/* <a
+          href="#"
+          onClick={
+  if(navigator.share) {
+    navigator.share({url:`https://www.divinehcare.com/prescription/VIEW_TOKEN`});
+  } else {
+    prompt('Copy link', 'https://your-domain.com/p/VIEW_TOKEN');
+  }
+"
+        > 
+          <i className="bi bi-share fa-2x"></i>
+        </a> */}
       </div>
     </div>
   );
@@ -91,7 +115,7 @@ const styles = {
     padding: "20px",
     fontFamily: "Arial",
     border: "1px solid #ccc",
-    background: "white"
+    background: "white",
   },
   header: {
     textAlign: "center",
@@ -99,7 +123,7 @@ const styles = {
   },
   section: {
     marginBottom: "10px",
-    lineHeight: "22px"
+    lineHeight: "22px",
   },
   table: {
     width: "100%",
@@ -121,6 +145,6 @@ const styles = {
     color: "white",
     border: "none",
     cursor: "pointer",
-    borderRadius: "5px"
-  }
+    borderRadius: "5px",
+  },
 };

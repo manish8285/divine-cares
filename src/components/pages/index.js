@@ -16,7 +16,7 @@ import { SingleBlogPage } from "./singleBlogPage";
 import { PackagePage } from "./packagePage";
 import { ProductsPage } from "./productsPage";
 import { MedicinePage } from "./MedicinePage";
-
+import { PrescriptionPage } from "./prescriptionPage";
 export {
     HomePage,
     AboutPage,
@@ -35,5 +35,6 @@ export {
     SingleBlogPage,
     PackagePage,
     ProductsPage,
-    MedicinePage
+    MedicinePage,
+    PrescriptionPage
 }
