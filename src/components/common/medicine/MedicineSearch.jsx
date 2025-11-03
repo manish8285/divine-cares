@@ -87,23 +87,38 @@ const handleSubmitPrescription = async () => {
             value={patient.notes}
             onChange={e => setNotes(e.target.value)}
           ></textarea>
-              <h5>Selected Medicines:</h5>
-              <ul style={{"listStyleType":"none"}}>
-                {selectedMedicines.map((med, index) => (
-                  <li key={med._id} className="mb-2">
-                    <span className="badge bg-primary p-2 me-2">
-                      {index + 1}
-                    </span>
-                    <span className="badge bg-light text-dark border p-2 me-2">
-                      {med.name} — {med.dose}
-                    </span>
-                    <button 
-                      className="btn btn-sm btn-outline-danger"
-                      onClick={() => handleRemoveMedicine(med._id)}
-                    >✕</button>
-                  </li>
-                ))}
-              </ul>
+              <div className="card mt-3">
+  <div className="card-header fw-bold">Selected Medicines</div>
+  
+  <ul className="list-group list-group-flush">
+    {selectedMedicines.map((med, index) => (
+      <li
+        key={med._id}
+        className="list-group-item d-flex justify-content-between align-items-start flex-column flex-md-row"
+      >
+        {/* Left side: number + name */}
+        <div className="mb-2 mb-md-0">
+          <span className="badge bg-primary me-2">{index + 1}</span>
+
+          <span className="fw-bold text-dark">{med.name}</span>
+
+          <div className="small text-muted mt-1">
+            <b>Dose:</b> {med.dose}
+          </div>
+        </div>
+
+        {/* Right side: remove button */}
+        <button
+          className="btn btn-sm btn-outline-danger"
+          onClick={() => handleRemoveMedicine(med._id)}
+        >
+          Remove
+        </button>
+      </li>
+    ))}
+  </ul>
+</div>
+
               <button 
                 className="btn btn-primary mt-2"
                 onClick={() => setStep(2)}
@@ -147,6 +162,11 @@ const handleSubmitPrescription = async () => {
                     {med.symptoms?.length > 0 && (
                       <p className="text-muted small mt-1">
                         <b>Symptoms:</b> {med.symptoms.join(", ")}
+                      </p>
+                    )}
+                    {med.type =='single' && (
+                      <p className="text-muted small mt-1">
+                        <b>Potency:</b> {med.potency.join(", ")}
                       </p>
                     )}
 

@@ -31,7 +31,7 @@ export const Treatments = () => {
         <div className="container">
           <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
             <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Our Specialized Treatments</h5>
-            <h1 className="display-4">DC Care Packs</h1>
+            <h1 className="display-4">DHC Care Packs</h1>
           </div>
           <div className="row g-5">
             {treatments.map((treatment, index) => (

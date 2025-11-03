@@ -22,7 +22,7 @@ export const Products = () => {
         <div className="container py-3">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
             <h5 className="d-inline-block text-uppercase border-bottom border-5 border-white">Our Handmade Products</h5>
-            <h1 className="display-4">DC Products</h1>
+            <h1 className="display-4">DHC Products</h1>
       </div>
 
           <div className="row g-4 justify-content-center align-items-center">
