@@ -1,3 +1,5 @@
+export { searchPrescriptionsApi } from "./prescription";
+
 export { getPrescriptionApi,createPrescriptionApi } from "./prescription";
 
 export { getAllMedicineApi, searchMedicineApi } from "./medicine";

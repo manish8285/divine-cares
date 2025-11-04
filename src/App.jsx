@@ -32,7 +32,8 @@ import { AboutPage,
         PackagePage,
         ProductsPage,
         MedicinePage,
-        PrescriptionPage
+        PrescriptionPage,
+        PrescriptionsPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthLayout, HomeLayout, Login, SignUp } from './components/common/index.js'
@@ -66,6 +67,7 @@ function App() {
       <Route path='package/:url' element={<PackagePage />} />
       <Route path='medicine' element={<MedicinePage />} />
       <Route path='prescription/:viewToken' element={<PrescriptionPage />} />
+      <Route path='prescriptions' element={<PrescriptionsPage />} />
 
       <Route path='auth/' element={<AuthLayout />}>
         <Route index element={<Login />} />

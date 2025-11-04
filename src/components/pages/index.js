@@ -17,6 +17,8 @@ import { PackagePage } from "./packagePage";
 import { ProductsPage } from "./productsPage";
 import { MedicinePage } from "./MedicinePage";
 import { PrescriptionPage } from "./prescriptionPage";
+import { PrescriptionsPage } from "./PrescriptionsPage";
+
 export {
     HomePage,
     AboutPage,
@@ -36,5 +38,6 @@ export {
     PackagePage,
     ProductsPage,
     MedicinePage,
-    PrescriptionPage
+    PrescriptionPage,
+    PrescriptionsPage
 }

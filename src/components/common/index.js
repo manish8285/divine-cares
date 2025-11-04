@@ -18,6 +18,7 @@ import { Products } from "./products";
 import { Login, LogoutButton, SignUp } from "./auth";
 import { MedicineSearch } from "./medicine";
 import { Prescription } from "./prescription";
+import { Prescriptions } from "./prescriptions";
 export {
     HomeLayout,
     AuthLayout,
@@ -43,5 +44,6 @@ export {
     SignUp,
     LogoutButton,
     MedicineSearch,
-    Prescription
+    Prescription,
+    Prescriptions
 }

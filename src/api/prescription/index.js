@@ -1,3 +1,3 @@
-import { getPrescriptionApi,createPrescriptionApi } from "./prescription";
+import { getPrescriptionApi,createPrescriptionApi, searchPrescriptionsApi } from "./prescription";
 
-export {getPrescriptionApi,createPrescriptionApi}
+export {getPrescriptionApi,createPrescriptionApi,searchPrescriptionsApi}
