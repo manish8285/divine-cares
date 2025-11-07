@@ -1,3 +1,5 @@
+export { getAllDiseaseApi } from "./disease";
+
 export { searchPrescriptionsApi } from "./prescription";
 
 export { getPrescriptionApi,createPrescriptionApi } from "./prescription";
@@ -17,3 +19,4 @@ export { bookTestApi } from "./tests";
 export { makeAppointmentApi } from "./appointment";
 
 export {getPostsApi, getPostByUrlApi} from "./posts"
+

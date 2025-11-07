@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createPrescriptionApi, searchMedicineApi } from "../../../api";
+import { createPrescriptionApi, getAllDiseaseApi, searchMedicineApi } from "../../../api";
 import PrescriptionView from "./PrescriptionView";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +8,7 @@ const MedicineSearch = () => {
   const [filterOption, setFilterOption] = useState("name");
   const [loading, setLoading] = useState(false);
   const [medicines, setMedicines] = useState([]);
+  const [diseases,setDiseases] = useState([])
   const [selectedMedicines, setSelectedMedicines] = useState([]);
   const [error, setError] = useState("");
   const [step, setStep] = useState(1);
@@ -27,6 +28,22 @@ const MedicineSearch = () => {
       setLoading(false);
     }
   };
+
+  const getAllDisease= async ()=>{
+    try{
+      const res = await getAllDiseaseApi();
+      console.log('disease',res.data)
+      setDiseases(res.data);
+    }catch(error){
+      console.log(error)
+    }
+  }
+
+  const handleDiseaseSelect=async(disease)=>{
+      const response = await searchMedicineApi(disease);
+      setMedicines(response.data || []);
+  }
+
 
   const handleMedicineSelect = (med) => {
     if (!selectedMedicines.find((m) => m._id === med._id)) {
@@ -63,6 +80,10 @@ const handleSubmitPrescription = async () => {
     setError(err);
   }
 };
+
+  useEffect(()=>{
+    getAllDisease();
+  },[])
 
 
   useEffect(() => {
@@ -136,15 +157,20 @@ const handleSubmitPrescription = async () => {
               onChange={(e) => setQuery(e.target.value)}
             />
 
-            {/* <select
+            
+              <select
               className="form-select w-25"
               value={filterOption}
-              onChange={(e) => setFilterOption(e.target.value)}
+              onChange={(e) => handleDiseaseSelect(e.target.value)}
             >
-              <option value="name">Select Disease</option>
-              <option value="symptom">Tumor</option>
-              <option value="disease">Piles</option>
-            </select> */}
+              <option >Select Disease</option>
+            {
+              diseases.map((dis)=>(
+                  <option key={dis._id} value={dis.name}>{dis.name}</option>
+              ))
+            }
+            </select>
+            
           </div>
 
           {/* Results */}
