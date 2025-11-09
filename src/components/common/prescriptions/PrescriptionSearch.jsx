@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 const PrescriptionSearch = ({ onSearch }) => {
   const [filters, setFilters] = useState({
     name: "",
-    mobile: "",
+    phone: "",
     date: ""
   });
 
   // ✅ Debounce search trigger
   useEffect(() => {
+    const hasValue = Object.values(filters).some((v) => v.trim() !== "");
+
+    if (!hasValue) return;
     const delay = setTimeout(() => {
       onSearch(filters);
     }, 400);
@@ -22,7 +25,7 @@ const PrescriptionSearch = ({ onSearch }) => {
   };
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md space-y-3">
+    <div className="pb-4 bg-white rounded-lg shadow-md space-y-3">
       <h5 className="font-semibold">Search Prescription</h5>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -38,9 +41,9 @@ const PrescriptionSearch = ({ onSearch }) => {
 
         <input
           type="text"
-          name="mobile"
+          name="phone"
           placeholder="Search by Mobile..."
-          value={filters.mobile}
+          value={filters.phone}
           onChange={handleChange}
           className="border rounded-lg px-3 py-2 w-full"
         />

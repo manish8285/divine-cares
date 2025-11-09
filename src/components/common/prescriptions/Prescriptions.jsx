@@ -42,8 +42,8 @@ const Prescriptions = () => {
 
         {/* Table */}
         {!loading && prescriptions.length > 0 && (
-          <div className="overflow-x-auto">
-            <table className="table-auto w-full border-collapse text-sm">
+          <div className="table-responsive overflow-x-auto w-full">
+            <table className="table-fixed w-100 border-collapse text-sm">
               <thead>
                 <tr className="bg-gray-100 text-left">
                   <th className="border p-2">#</th>
