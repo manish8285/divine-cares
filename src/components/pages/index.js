@@ -18,6 +18,11 @@ import { ProductsPage } from "./productsPage";
 import { MedicinePage } from "./MedicinePage";
 import { PrescriptionPage } from "./prescriptionPage";
 import { PrescriptionsPage } from "./PrescriptionsPage";
+import { DoctorsPage } from "./doctorsPage";
+import { BookAppointmentPage } from "./bookAppointmentPage";
+import { UserPrescriptionsPage } from "./UserPrescriptionsPage";
+import { UserAppointmentsPage } from "./UserAppointmentsPage";
+
 
 export {
     HomePage,
@@ -39,5 +44,9 @@ export {
     ProductsPage,
     MedicinePage,
     PrescriptionPage,
-    PrescriptionsPage
+    PrescriptionsPage,
+    DoctorsPage,
+    BookAppointmentPage,
+    UserPrescriptionsPage,
+    UserAppointmentsPage
 }

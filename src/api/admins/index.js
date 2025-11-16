@@ -1,0 +1,1 @@
+export { getDoctorsApi } from "./admins";

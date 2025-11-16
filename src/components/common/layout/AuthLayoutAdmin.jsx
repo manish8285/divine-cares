@@ -1,37 +1,37 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-export const AuthLayout = () => {
+export const AuthLayoutAdmin = () => {
   return (
     <div
       id="auth-layout"
       className="min-vh-100 d-flex align-items-center justify-content-center bg-light"
       style={{
-        background: "linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%)",
+        background: "linear-gradient(135deg, #e1f5fe 0%, #f3f7ff 100%)",
       }}
     >
       <div className="container">
         <div className="row justify-content-center shadow-lg rounded-4 overflow-hidden bg-white">
+          
           {/* Left Info Section */}
           <div
-            className="col-lg-6 d-none d-lg-flex flex-column justify-content-center align-items-center text-white p-5 bg-primary"
-            
+            className="col-lg-6 d-none d-lg-flex flex-column justify-content-center align-items-center text-white p-5"
+            style={{ background: "linear-gradient(135deg, #0d47a1, #1976d2)" }}
           >
             <div className="text-center">
-              <h1 className="fw-bold mb-3">Welcome to Divine Homoeo Care</h1>
+              <h1 className="fw-bold mb-3">Doctor Portal</h1>
               <p className="fs-5">
-                🌿 Experience the power of natural healing with trusted
-                homoeopathic care.
+                Access your appointments, patient records, and consultations in one place.
               </p>
             </div>
 
             <div className="mt-4 text-start w-100">
-              <h5 className="fw-semibold mb-3">Why Choose Us?</h5>
+              <h5 className="fw-semibold mb-3">Features</h5>
               <ul className="list-unstyled fs-6">
-                <li className="mb-2">✅ 20+ Years of Homoeopathy Legacy</li>
-                <li className="mb-2">✅ B.H.M.S, M.D. Qualified Doctors</li>
-                <li className="mb-2">✅ Thousands of Happy Patients</li>
-                <li className="mb-2">✅ Safe & Side-Effect Free Treatments</li>
-                <li className="mb-2">✅ Personalized Consultation</li>
+                <li className="mb-2">🩺 Manage Patient Consultations</li>
+                <li className="mb-2">📅 View & Update Appointments</li>
+                <li className="mb-2">📁 Access Patient History</li>
+                <li className="mb-2">💊 Manage Prescriptions</li>
+                <li className="mb-2">🔔 Receive Important Updates</li>
               </ul>
             </div>
           </div>
@@ -39,12 +39,9 @@ export const AuthLayout = () => {
           {/* Right Form Section */}
           <div className="col-lg-6 col-md-10 mx-auto p-5">
             <div className="text-center mb-4">
-              <h3 className="fw-bold text-primary mb-2">
-                First Step Towards Better Life
-              </h3>
+              <h3 className="fw-bold text-primary mb-2">Welcome Doctor</h3>
               <p className="text-secondary mb-4">
-                Start your journey toward better health. Get expert advice and
-                effective medicines in one place.
+                Login or create an account to continue.
               </p>
             </div>
 
@@ -71,15 +68,10 @@ export const AuthLayout = () => {
 
             {/* Extra Info */}
             <p className="text-center text-muted mt-4 mb-0 small">
-              © {new Date().getFullYear()} Divine Homoeo Care — All Rights
-              Reserved.
+              © {new Date().getFullYear()} Doctor Portal — All Rights Reserved.
             </p>
-            <div className="text-center">
-              <NavLink className="text-center" to="/auth-admin/">
-              Login As Admin
-            </NavLink> 
-            </div>
           </div>
+
         </div>
       </div>
     </div>

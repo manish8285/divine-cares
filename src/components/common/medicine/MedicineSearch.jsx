@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createPrescriptionApi, getAllDiseaseApi, searchMedicineApi } from "../../../api";
 import PrescriptionView from "./PrescriptionView";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const MedicineSearch = () => {
   const [query, setQuery] = useState("");
@@ -15,6 +16,13 @@ const MedicineSearch = () => {
   const [patient, setPatient] = useState({ name: "", age: "", phone: "",email:"",address:"",gender:"" });
   const [notes, setNotes] = useState("");
   let navigate = useNavigate()
+  const { isAuthenticatedAdmin } = useSelector((state) => state.auth);
+
+  useEffect(()=>{
+          if(!isAuthenticatedAdmin){
+          navigate(`/auth-admin/login?redirect=${location.pathname}`)
+      }
+      },[])
 
   const handleSearch = async () => {
     if (!query.trim()) return;

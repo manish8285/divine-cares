@@ -1,1 +1,1 @@
-export { makeAppointmentApi } from "./appointment";
+export { makeAppointmentApi,bookAppointmentApi,getAllAppointmentsApi,getAppointmentsByUserApi,getAppointmentsByDoctorApi } from "./appointment";

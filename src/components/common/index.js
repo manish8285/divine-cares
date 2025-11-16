@@ -1,11 +1,11 @@
-import { AuthLayout, HomeLayout } from "./layout";
+import { AuthLayout, AuthLayoutAdmin, HomeLayout } from "./layout";
 import { AboutUs } from "./aboutus/Aboutus";
 import { Pricing } from "./pricing";
 import { Teams } from "./teams";
 import { Testimonial } from "./testimonial";
 import { Services } from "./services";
 import { Blogs,SingleBlog } from "./blogs";
-import { Appointment } from "./appointment";
+import { Appointment, Appointments, BookAppointment, UserAppointments } from "./appointment";
 import { Treatments } from "./treatments";
 import { Career } from "./career";
 import { Tests } from "./tests";
@@ -15,10 +15,10 @@ import { SEO } from "./seo";
 import { Hero } from "./hero";
 import { PackageForm,PackageDetails } from "./package";
 import { Products } from "./products";
-import { Login, LogoutButton, SignUp } from "./auth";
+import { Login, LoginAdmin, LogoutButton, SignUp, SignUpAdmin } from "./auth";
 import { MedicineSearch } from "./medicine";
 import { Prescription } from "./prescription";
-import { Prescriptions } from "./prescriptions";
+import { Prescriptions, UserPrescriptions } from "./prescriptions";
 export {
     HomeLayout,
     AuthLayout,
@@ -42,8 +42,15 @@ export {
     Products,
     Login,
     SignUp,
+    LoginAdmin,
+    SignUpAdmin,
     LogoutButton,
     MedicineSearch,
     Prescription,
-    Prescriptions
+    Prescriptions,
+    Appointments,
+    BookAppointment,
+    UserPrescriptions,
+    UserAppointments,
+    AuthLayoutAdmin
 }

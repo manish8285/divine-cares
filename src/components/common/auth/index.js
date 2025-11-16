@@ -1,5 +1,5 @@
-import { Login } from "./login";
+import { Login, LoginAdmin } from "./login";
 import { LogoutButton } from "./logout";
-import { SignUp } from "./signup";
+import { SignUp, SignUpAdmin } from "./signup";
 
-export { Login, SignUp, LogoutButton };
+export { Login, SignUp, LogoutButton,LoginAdmin,SignUpAdmin };

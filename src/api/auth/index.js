@@ -1,3 +1,3 @@
-import { signinApi, signupApi } from "./auth";
+import { signinAdminApi, signinApi, signupAdminApi, signupApi } from "./auth";
 
-export {signupApi,signinApi}
+export {signupApi,signinApi,signinAdminApi,signupAdminApi}

@@ -19,6 +19,13 @@ export const authAxios = axios.create({
   },
 });
 
+export const authAxiosAdmin = axios.create({
+  baseURL,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
 // Add request interceptor
 authAxios.interceptors.request.use(
   (config) => {
@@ -28,6 +35,27 @@ authAxios.interceptors.request.use(
 
     // Or fallback to localStorage
     const tokenFromLocalStorage = localStorage.getItem("token");
+
+    const token = tokenFromRedux || tokenFromLocalStorage;
+
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
+// Add request interceptor
+authAxiosAdmin.interceptors.request.use(
+  (config) => {
+    // Try getting token from Redux store
+    const state = store.getState();
+    const tokenFromRedux = state?.auth?.tokenAdmin;
+
+    // Or fallback to localStorage
+    const tokenFromLocalStorage = localStorage.getItem("tokenAdmin");
 
     const token = tokenFromRedux || tokenFromLocalStorage;
 
