@@ -92,7 +92,7 @@ function App() {
       
       </Route>
 
-      <Route path='auth-admin/' element={<AuthLayoutAdmin />}>
+      <Route path='auth-doctor/' element={<AuthLayoutAdmin />}>
         <Route index element={<LoginAdmin />} />
         <Route path='login' element={<LoginAdmin />} />
         <Route path='signup' element={<SignUpAdmin />} />

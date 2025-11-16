@@ -25,7 +25,6 @@ export const UserAppointments = () => {
 
   return (
     <div className="container my-4">
-      <h4>All Appointments</h4>
 
       {loading ? (
         <p>Loading...</p>

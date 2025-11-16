@@ -17,6 +17,6 @@ export const createPrescriptionApi=async(prescription)=>{
 }
 
 export const searchPrescriptionsApi=async(filter)=>{
-  const response = await authAxios.post(`prescriptions/search`,filter)
+  const response = await authAxiosAdmin.post(`prescriptions/search`,filter)
   return response.data
 }

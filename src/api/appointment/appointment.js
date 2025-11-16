@@ -1,4 +1,4 @@
-import { authAxios, myAxios } from "../base";
+import { authAxios, authAxiosAdmin, myAxios } from "../base";
 
 export const makeAppointmentApi=async(data) => {
     const response = await myAxios.post('appointment',data)
@@ -11,7 +11,7 @@ export const bookAppointmentApi=async(data) => {
 }
 
 export const getAppointmentsByDoctorApi=async() => {
-    const response = await authAxios.get('appointment/doctor')
+    const response = await authAxiosAdmin.get('appointment/doctor')
     return response.data
 }
 
@@ -21,7 +21,7 @@ export const getAppointmentsByUserApi=async() => {
 }
 
 export const getAllAppointmentsApi=async() => {
-    const response = await myAxios.get('appointment/all')
+    const response = await authAxiosAdmin.get('appointment/all')
     return response.data
 }
 

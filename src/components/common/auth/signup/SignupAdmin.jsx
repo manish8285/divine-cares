@@ -23,7 +23,7 @@ export const SignUpAdmin=()=>{
     
           // Navigate after short delay (optional UX improvement)
           setTimeout(() => {
-            navigate("/auth/login");
+            navigate("/auth-doctor/login");
           }, 1000);
         } catch (error) {
           console.error(error);
@@ -96,6 +96,36 @@ export const SignUpAdmin=()=>{
                   setUserData({
                     ...userData,
                     phoneNumber: event.target.value,
+                  })
+                }
+              />
+            </div>
+            <div className="col-12 col-sm-12">
+              <input
+                type="text"
+                className="form-control bg-light border-0"
+                placeholder="Title"
+                style={{ height: 55 }}
+                value={userData.title}
+                onChange={(event) =>
+                  setUserData({
+                    ...userData,
+                    title: event.target.value,
+                  })
+                }
+              />
+            </div>
+            <div className="col-12 col-sm-12">
+              <input
+                type="textarea"
+                className="form-control bg-light border-0"
+                placeholder="about"
+                style={{ height: 55 }}
+                value={userData.about}
+                onChange={(event) =>
+                  setUserData({
+                    ...userData,
+                    about: event.target.value,
                   })
                 }
               />

@@ -75,8 +75,8 @@ export const AuthLayout = () => {
               Reserved.
             </p>
             <div className="text-center">
-              <NavLink className="text-center" to="/auth-admin/">
-              Login As Admin
+              <NavLink className="text-center" to="/auth-doctor/">
+              Login As Doctor
             </NavLink> 
             </div>
           </div>

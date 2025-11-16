@@ -15,12 +15,13 @@ const MedicineSearch = () => {
   const [step, setStep] = useState(1);
   const [patient, setPatient] = useState({ name: "", age: "", phone: "",email:"",address:"",gender:"" });
   const [notes, setNotes] = useState("");
+  const [processing,setProcessing] = useState(false);
   let navigate = useNavigate()
   const { isAuthenticatedAdmin } = useSelector((state) => state.auth);
 
   useEffect(()=>{
           if(!isAuthenticatedAdmin){
-          navigate(`/auth-admin/login?redirect=${location.pathname}`)
+          navigate(`/auth-doctor/login?redirect=${location.pathname}`)
       }
       },[])
 
@@ -64,6 +65,7 @@ const MedicineSearch = () => {
   };
 
 const handleSubmitPrescription = async () => {
+  setProcessing(true)
   try {
     const payload = {
       patient,
@@ -87,6 +89,7 @@ const handleSubmitPrescription = async () => {
     console.error("Error submitting prescription:", err);
     setError(err);
   }
+  setProcessing(false)
 };
 
   useEffect(()=>{
@@ -262,8 +265,8 @@ const handleSubmitPrescription = async () => {
           
 
           <button className="btn btn-secondary me-2" onClick={() => setStep(1)}>Back</button>
-          <button className="btn btn-primary mt-2" onClick={()=>handleSubmitPrescription()}>
-            Create Prescription
+          <button disabled={processing} className="btn btn-primary mt-2" onClick={()=>handleSubmitPrescription()}>
+            {processing?"processing ...":"Create Prescription"}
           </button>
         </div>
       )}

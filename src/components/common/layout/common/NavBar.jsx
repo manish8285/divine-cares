@@ -17,23 +17,24 @@ export const NavBar = () => {
     { label: "Home", path: "/" },
     { label: "Treatments", path: "/treatment" },
     { label: "Products", path: "/products" },
-    // { label: "Doctors", path: "/doctors" },
+   { label: "Doctors", path: "/doctors" },
     { label: "Tests", path: "/tests" },
   ];
 
   const authMenu = [
     // { label: "Doctors", path: "/doctors" },
-    // { label: "Appointments", path: "/user/appointments" },
-    // { label: "Prescriptions", path: "/user/prescriptions" },
-        { label: "Home", path: "/" },
+    { label: "Appointments", path: "/user/appointments" },
+    { label: "Prescriptions", path: "/user/prescriptions" },
+        // { label: "Home", path: "/" },
     { label: "Treatments", path: "/treatment" },
     { label: "Products", path: "/products" },
-    // { label: "Doctors", path: "/doctors" },
+    { label: "Doctors", path: "/doctors" },
     { label: "Tests", path: "/tests" },
   ];
 
   const adminMenu = [
-    { label: "Medicine", path: "/medicine" }
+    { label: "Medicine", path: "/medicine" },
+    { label: "Prescriptions", path: "/prescriptions" }
   ];
 
   // Menu selection (ADMIN FIRST)
