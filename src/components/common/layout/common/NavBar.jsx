@@ -34,7 +34,9 @@ export const NavBar = () => {
 
   const adminMenu = [
     { label: "Medicine", path: "/medicine" },
-    { label: "Prescriptions", path: "/prescriptions" }
+    { label: "Prescriptions", path: "/prescriptions" },
+    { label: "Appointments", path: "/doctor/appointments" },
+
   ];
 
   // Menu selection (ADMIN FIRST)

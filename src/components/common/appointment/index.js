@@ -1,5 +1,5 @@
 import { Appointment } from "./Appointment";
-import { Appointments, UserAppointments } from "./appointments";
+import { Appointments, UserAppointments,DoctorAppointments } from "./appointments";
 import { BookAppointment } from "./BookAppointment";
-export { Appointment,Appointments,BookAppointment,UserAppointments}
+export { Appointment,Appointments,BookAppointment,UserAppointments,DoctorAppointments}
 

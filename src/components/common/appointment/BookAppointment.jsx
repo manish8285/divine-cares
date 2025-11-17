@@ -56,6 +56,7 @@ export const BookAppointment = () => {
       setLoading(true);
       await bookAppointmentApi(payload);
       alert("Appointment booked successfully!");
+      navigate('/appointments')
     } catch (error) {
       console.error(error);
       alert("Booking failed!");

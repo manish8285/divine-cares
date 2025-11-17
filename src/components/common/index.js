@@ -5,7 +5,7 @@ import { Teams } from "./teams";
 import { Testimonial } from "./testimonial";
 import { Services } from "./services";
 import { Blogs,SingleBlog } from "./blogs";
-import { Appointment, Appointments, BookAppointment, UserAppointments } from "./appointment";
+import { Appointment, Appointments, BookAppointment, UserAppointments ,DoctorAppointments} from "./appointment";
 import { Treatments } from "./treatments";
 import { Career } from "./career";
 import { Tests } from "./tests";
@@ -52,5 +52,6 @@ export {
     BookAppointment,
     UserPrescriptions,
     UserAppointments,
-    AuthLayoutAdmin
+    AuthLayoutAdmin,
+    DoctorAppointments
 }

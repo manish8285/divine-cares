@@ -37,7 +37,8 @@ import { AboutPage,
         DoctorsPage,
         BookAppointmentPage,
         UserPrescriptionsPage,
-        UserAppointmentsPage
+        UserAppointmentsPage,
+        DoctorAppointmentsPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthLayout, AuthLayoutAdmin, HomeLayout, Login, LoginAdmin, SignUp, SignUpAdmin } from './components/common/index.js'
@@ -89,8 +90,9 @@ function App() {
         <Route index element={<Login />} />
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<SignUp />} />
-      
       </Route>
+
+      <Route path='doctor/appointments' element={<DoctorAppointmentsPage />} />
 
       <Route path='auth-doctor/' element={<AuthLayoutAdmin />}>
         <Route index element={<LoginAdmin />} />

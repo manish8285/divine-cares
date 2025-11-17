@@ -22,6 +22,7 @@ import { DoctorsPage } from "./doctorsPage";
 import { BookAppointmentPage } from "./bookAppointmentPage";
 import { UserPrescriptionsPage } from "./UserPrescriptionsPage";
 import { UserAppointmentsPage } from "./UserAppointmentsPage";
+import { DoctorAppointmentsPage } from "./DoctorAppointmentsPage";
 
 
 export {
@@ -48,5 +49,6 @@ export {
     DoctorsPage,
     BookAppointmentPage,
     UserPrescriptionsPage,
-    UserAppointmentsPage
+    UserAppointmentsPage,
+    DoctorAppointmentsPage
 }
