@@ -113,7 +113,8 @@ export const BookAppointment = () => {
       {/* Header */}
       <div className="page-header">
         <h2 className="fw-bold text-primary mb-2">Book Your Appointment</h2>
-        <p className="text-muted">Consult a verified doctor for just ₹100</p>
+        <p className="text-muted">Consult a verified doctor for just ₹100 <br></br>You will get call / whatsapp as soon as possible</p>
+        <p className="text-muted"></p>
       </div>
 
       {/* Form */}
@@ -239,11 +240,11 @@ export const BookAppointment = () => {
               <select
                 className="form-select form-select-lg"
                 name="mode"
+                disabled={true}
                 value={form.mode}
                 onChange={handleChange}
               >
-                <option value="Online">Online</option>
-                <option value="Offline">Offline</option>
+                <option value="Online">Online / call / whatsapp</option>
               </select>
             </div>
 

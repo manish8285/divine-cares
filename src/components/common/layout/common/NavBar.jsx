@@ -25,17 +25,19 @@ export const NavBar = () => {
     // { label: "Doctors", path: "/doctors" },
     { label: "Appointments", path: "/user/appointments" },
     { label: "Prescriptions", path: "/user/prescriptions" },
-        // { label: "Home", path: "/" },
+    {label:'Orders',path:"/user/orders"},
     { label: "Treatments", path: "/treatment" },
     { label: "Products", path: "/products" },
     { label: "Doctors", path: "/doctors" },
-    { label: "Tests", path: "/tests" },
+    { label: "Tests", path: "/tests" }
+    
   ];
 
   const adminMenu = [
     { label: "Medicine", path: "/medicine" },
     { label: "Prescriptions", path: "/prescriptions" },
     { label: "Appointments", path: "/doctor/appointments" },
+    {label:"Orders", path:"/doctor/orders"}
 
   ];
 

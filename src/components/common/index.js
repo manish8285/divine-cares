@@ -12,13 +12,14 @@ import { Tests } from "./tests";
 import { ContactForm } from "./contactus";
 import { Gallery } from "./gallery";
 import { SEO } from "./seo";
-import { Hero } from "./hero";
+import { Hero, HeroOnlineAppointment } from "./hero";
 import { PackageForm,PackageDetails } from "./package";
 import { Products } from "./products";
 import { Login, LoginAdmin, LogoutButton, SignUp, SignUpAdmin } from "./auth";
 import { MedicineSearch } from "./medicine";
 import { Prescription } from "./prescription";
 import { Prescriptions, UserPrescriptions } from "./prescriptions";
+import { UserOrders,OrderDetails,AdminOrders } from "./orders";
 export {
     HomeLayout,
     AuthLayout,
@@ -53,5 +54,9 @@ export {
     UserPrescriptions,
     UserAppointments,
     AuthLayoutAdmin,
-    DoctorAppointments
+    DoctorAppointments,
+    UserOrders,
+    OrderDetails,
+    AdminOrders,
+    HeroOnlineAppointment
 }

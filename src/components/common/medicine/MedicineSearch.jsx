@@ -73,7 +73,9 @@ const handleSubmitPrescription = async () => {
       medicines: selectedMedicines.map(med => ({
         medicine: med._id,     // ref id
         name: med.name,        // duplicate name
-        dosage: med.dose
+        dosage: med.dose,
+        type:med.type,
+        size:med.size
       }))
     };
 

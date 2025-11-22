@@ -60,6 +60,7 @@ const SearchDoctor = ({ onSearch }) => {
             <div className="row g-3">
               <div className="col-md-4">
                 <select
+                  disabled
                   className="form-select form-select-lg"
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}

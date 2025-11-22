@@ -1,3 +1,9 @@
+export { createAddressApi, getAddressByIdApi,getMyAddressApi } from "./address";
+
+export { createOrderByUserApi,
+getUserOrdersApi,
+getOrderByViewTokenApi,createOrderByAdminApi,getAdminOrdersApi } from "./orders";
+
 export { signinAdminApi, signupAdminApi } from "./auth";
 
 export { getDoctorsApi } from "./admins";
@@ -23,5 +29,4 @@ export { bookTestApi } from "./tests";
 export { makeAppointmentApi,bookAppointmentApi,getAllAppointmentsApi,getAppointmentsByUserApi,getAppointmentsByDoctorApi } from "./appointment";
 
 export {getPostsApi, getPostByUrlApi} from "./posts"
-
 

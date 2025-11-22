@@ -46,6 +46,7 @@ export const Appointment = () => {
                         className="form-select bg-light border-0"
                         style={{ height: 55 }}
                         value={appointmenetdata.mode}
+                        disabled
                         onChange={(event) =>
                           setAppointmentdata({
                             ...appointmenetdata,
@@ -53,12 +54,6 @@ export const Appointment = () => {
                           })
                         }
                       >
-                        <option disabled selected>
-                          Choose Mode
-                        </option>
-                        <option value={"online"}>
-                          Online (Whatsapp/ Call)
-                        </option>
                         <option value={"offline"}>
                           Offline (At Clinic, Gurgaon)
                         </option>

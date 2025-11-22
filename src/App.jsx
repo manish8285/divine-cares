@@ -38,13 +38,17 @@ import { AboutPage,
         BookAppointmentPage,
         UserPrescriptionsPage,
         UserAppointmentsPage,
-        DoctorAppointmentsPage
+        DoctorAppointmentsPage,
+        UserOrdersPage,
+        CreateOrderPage,
+        AdminOrdersPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthLayout, AuthLayoutAdmin, HomeLayout, Login, LoginAdmin, SignUp, SignUpAdmin } from './components/common/index.js'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 import { AppointmentsPage } from './components/pages/appointmentsPage.jsx';
+import { OrderDetailsPage } from './components/pages/orderDetailsPage.jsx';
 
 
 function App() {
@@ -73,7 +77,10 @@ function App() {
       <Route path='blog/:url' element={<SingleBlogPage />} />
       <Route path='package/:url' element={<PackagePage />} />
       <Route path='medicine' element={<MedicinePage />} />
+      <Route path="create-order" element={<CreateOrderPage />} />
       <Route path='prescription/:viewToken' element={<PrescriptionPage />} />
+      <Route path='order/:viewToken' element={<OrderDetailsPage />} />
+
       <Route path='prescriptions' element={<PrescriptionsPage />} />
       <Route path='doctors' element={<DoctorsPage />} /> 
 
@@ -84,6 +91,7 @@ function App() {
 
       <Route path='user/prescriptions' element={<UserPrescriptionsPage />} />
       <Route path='user/appointments' element={<UserAppointmentsPage />} />
+      <Route path='user/orders' element={<UserOrdersPage />} />
 
 
       <Route path='auth/' element={<AuthLayout />}>
@@ -93,6 +101,7 @@ function App() {
       </Route>
 
       <Route path='doctor/appointments' element={<DoctorAppointmentsPage />} />
+      <Route path='doctor/orders' element={<AdminOrdersPage />} />
 
       <Route path='auth-doctor/' element={<AuthLayoutAdmin />}>
         <Route index element={<LoginAdmin />} />

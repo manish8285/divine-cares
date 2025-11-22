@@ -4,6 +4,7 @@ import { getPrescriptionApi } from "../../../api";
 
 // import signature from "../../../assets/signature.png";
  import stamp from "../../../assets/img/stamp_divine.jpg";
+import { OrderMedicineSection } from "./common";
 
 const Prescription = () => {
   const { viewToken } = useParams();
@@ -146,6 +147,10 @@ const Prescription = () => {
       <button className="btn btn-dark mt-3 w-100" onClick={() => window.print()}>
         Print Prescription
       </button>
+      </div>
+
+      <div>
+        <OrderMedicineSection prescription={prescription} />
       </div>
 
     </> 
