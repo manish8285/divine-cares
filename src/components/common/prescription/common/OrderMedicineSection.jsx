@@ -5,7 +5,7 @@ const OrderMedicineSection = ({ prescription }) => {
   const navigate = useNavigate();
 
   const goToCreateOrder = () => {
-    navigate("/create-order", { state: { prescription } });
+    navigate(`/create-order`,{state:{prescription}});
   };
 
   return (

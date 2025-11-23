@@ -13,6 +13,7 @@ const Prescription = () => {
   const loadPrescription = async () => {
     try {
       const res = await getPrescriptionApi(viewToken);
+      console.log(res.data)
       setPrescription(res.data);
     } catch (err) {
       console.log(err);
@@ -22,6 +23,13 @@ const Prescription = () => {
   useEffect(() => {
     loadPrescription();
   }, []);
+
+    const isAfterTargetDate = () => {
+    const date = new Date(prescription.createdAt);
+    const target = new Date("2025-11-22T23:59:59.999Z"); 
+    // anything after 22 Nov 2025
+    return date > target;
+  };
 
   if (!prescription) return <div className="container text-center mt-5">Loading...</div>;
 
@@ -150,7 +158,9 @@ const Prescription = () => {
       </div>
 
       <div>
-        <OrderMedicineSection prescription={prescription} />
+        { isAfterTargetDate() && (<OrderMedicineSection prescription={prescription} />)
+
+}
       </div>
 
     </> 

@@ -27,14 +27,14 @@ const OrderDetails = ({ order }) => {
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3 className="fw-bold">Order Details</h3>
 
-        {viewToken && (
+        {/* {viewToken && (
           <NavLink
             to={`/orders/view/${viewToken}`}
             className="btn btn-primary btn-sm"
           >
             🔗 View Public Page
           </NavLink>
-        )}
+        )} */}
       </div>
 
       {/* Order Meta Section */}
