@@ -41,7 +41,7 @@ export const Treatments = () => {
                   <h4 className="mb-0">{treatment.title}</h4>
                   
                   <div>
-                    <h5 className='text-primary'>Medicines + Doctor Care = Rs 1000/-</h5>
+                    {/* <h5 className='text-primary'>Medicines + Doctor Care = Rs 1000/-</h5> */}
                   <NavLink to={`/package/${treatment.id}`} className="btn btn-warning rounded-pill py-md-3 px-md-5 mx-2 w-full">Buy Package</NavLink>
                   </div>
                 </div>

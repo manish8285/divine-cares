@@ -41,7 +41,8 @@ import { AboutPage,
         DoctorAppointmentsPage,
         UserOrdersPage,
         CreateOrderPage,
-        AdminOrdersPage
+        AdminOrdersPage,
+        SingleProductPage
       } from './components/pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthLayout, AuthLayoutAdmin, HomeLayout, Login, LoginAdmin, SignUp, SignUpAdmin } from './components/common/index.js'
@@ -80,6 +81,7 @@ function App() {
       <Route path="create-order" element={<CreateOrderPage />} />
       <Route path='prescription/:viewToken' element={<PrescriptionPage />} />
       <Route path='order/:viewToken' element={<OrderDetailsPage />} />
+      <Route path='product' element={<SingleProductPage />} />
 
       <Route path='prescriptions' element={<PrescriptionsPage />} />
       <Route path='doctors' element={<DoctorsPage />} /> 

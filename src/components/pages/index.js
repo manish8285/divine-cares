@@ -26,6 +26,7 @@ import { DoctorAppointmentsPage } from "./DoctorAppointmentsPage";
 import { UserOrdersPage } from "./UserOrders";
 import { CreateOrderPage } from "./createOrderPage";
 import { AdminOrdersPage } from "./AdminOrdersPage";
+import SingleProductPage from "./SingleProductPage";
 
 
 
@@ -58,5 +59,6 @@ export {
     DoctorAppointmentsPage,
     UserOrdersPage,
     CreateOrderPage,
-    AdminOrdersPage
+    AdminOrdersPage,
+    SingleProductPage
 }
