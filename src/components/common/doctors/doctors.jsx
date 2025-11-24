@@ -51,7 +51,7 @@ const SearchDoctor = ({ onSearch }) => {
           </h1>
           <p className="text-muted mx-auto" style={{ maxWidth: 650 }}>
             Get expert consultation from verified doctors for just{" "}
-            <span className="text-success fw-bold">₹100</span>.  
+            <span className="text-success fw-bold">₹99</span>.  
             Search by name, specialization, or category and book your appointment instantly.
           </p>
 

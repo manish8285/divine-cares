@@ -113,7 +113,7 @@ export const BookAppointment = () => {
       {/* Header */}
       <div className="page-header">
         <h2 className="fw-bold text-primary mb-2">Book Your Appointment</h2>
-        <p className="text-muted">Consult a verified doctor for just ₹100 <br></br>You will get call / whatsapp as soon as possible</p>
+        <p className="text-muted">Consult a verified doctor for just ₹99 <br></br>You will get call / whatsapp as soon as possible</p>
         <p className="text-muted"></p>
       </div>
 
@@ -209,14 +209,14 @@ export const BookAppointment = () => {
 
             {/* Payment Section */}
             <div className="col-12 mt-4">
-              <h4 className="fw-bold text-secondary mb-3">Payment (₹100)</h4>
+              <h4 className="fw-bold text-secondary mb-3">Payment (₹99)</h4>
               <div className="payment-box d-flex justify-content-between flex-wrap align-items-center">
                 <img src={QR} alt="QR" />
 
                 <div className="text-center flex-grow-1">
                   <p className="mb-1">Scan the QR or Pay via UPI</p>
                   <h5 className="fw-bold text-primary">divinehc@ybl</h5>
-                  <p className="mt-1 mb-0">Pay <b>₹100</b> and enter last 4 digits of UTR</p>
+                  <p className="mt-1 mb-0">Pay <b>₹99</b> and enter last 4 digits of UTR</p>
                 </div>
               </div>
             </div>

@@ -22,7 +22,7 @@ export const HeroOnlineAppointment = () => {
               Consult expert homoeopathic doctors online and get a proper  
               <b> prescription, medicine guidance, and treatment plan</b> —  
               all at the lowest consultation fee of  
-              <span className="fw-bold text-success"> just ₹100</span>.
+              <span className="fw-bold text-success"> just ₹99</span>.
             </p>
 
             <ul className="fs-5 text-dark mb-4" style={{ listStyle: "none", paddingLeft: 0 }}>
@@ -37,7 +37,7 @@ export const HeroOnlineAppointment = () => {
               to="/doctors"
               className="btn btn-primary btn-lg px-5 py-3 fw-semibold shadow-sm rounded-pill"
             >
-              Book Appointment @ ₹100
+              Book Appointment @ ₹99
             </NavLink>
           </div>
 
@@ -57,7 +57,7 @@ export const HeroOnlineAppointment = () => {
 
               <div className="d-flex justify-content-between px-2 mb-3">
                 <div>
-                  <h3 className="text-success fw-bold mb-0">₹100</h3>
+                  <h3 className="text-success fw-bold mb-0">₹99</h3>
                   <small className="text-muted">Consultation Fee</small>
                 </div>
                 <div>
