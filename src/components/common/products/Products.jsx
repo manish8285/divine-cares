@@ -7,19 +7,19 @@ export const Products = () => {
     {
       name: "Hair Oil",
       size: "100ml",
-      price: 400,
+      price: 390,
       bannerImage: "hair_oil_poster.png",
     },
     {
       name: "Skin Oil",
       size: "100ml",
-      price: 400,
+      price: 390,
       bannerImage: "skin_oil_poster.png",
     },
     {
       name: "Face Spray",
       size: "100ml",
-      price: 400,
+      price: 390,
       bannerImage: "acne_poster.png",
     },
   ];
