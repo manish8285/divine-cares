@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Sweta from './../../../assets/img/sweta.png';
 import Vinita from './../../../assets/img/vinita.jpeg';
+import Muskaan from './../../../assets/img/Muskaan.jpeg';
 
 export const Teams = () => {
   useEffect(() => {
@@ -40,6 +41,13 @@ export const Teams = () => {
       subtitle:"Homeopathic Physician",
       registration:"34257",
       about:"Dr. Sweta is a homeopathic specialist with over 10 years of experience treating chronic diseases like kidney stones, skin conditions, asthma, and digestive disorders. She provides personalized care, addressing root causes for effective relief.",
+
+    },
+    {title:"Dr. Muskaan Chhabra",src:Muskaan,
+      profession:"Consultant",
+      subtitle:"Homeopathic Physician",
+      registration:"0071012",
+      about:"Dr. Muskaan Chhabra is a qualified Homoeopathic physician dedicated to providing safe, natural, and result-oriented treatments. With a patient-first approach and deep diagnostic understanding, the doctor focuses on treating the root cause.",
 
     },
     {title:"Dr. Vinita Mangal",

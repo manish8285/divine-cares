@@ -34,14 +34,15 @@ const Prescription = () => {
   if (!prescription) return <div className="container text-center mt-5">Loading...</div>;
 
   return (
-    <>
+    <div className="p-1">
     <div id="printArea" className="container p-3 p-md-5 bg-white border rounded my-3">
       
       {/* Clinic Header */}
       <div className="text-center mb-4">
-        <h3 className="fw-bold">Divine Homoeo Care</h3>
-        <div>www.divinehcare.com</div>
-        <div>+91-8595040055 • divinecares01@gmail.com</div>
+        <h1 className="fw-bold">Divine Homoeo Care</h1>
+        <h3 className="text-primary">Dr. Sweta Kumari</h3>
+        <h6 className="text-muted">(B.H.M.S , D.N.Y.S)</h6>
+        <div className="text-primary">• +91-8595040055 • divinecares01@gmail.com • www.divinehcare.com</div>
         <hr />
       </div>
 
@@ -163,7 +164,7 @@ const Prescription = () => {
 }
       </div>
 
-    </> 
+    </div> 
   );
 };
 
